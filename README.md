@@ -1,142 +1,144 @@
-#HTML
+# HTML
 
-##admin/
+## admin/
 管理者ページのhtmlファイル群
 
-##footer.html
+## footer.html
 共通部分
 
-##header.html
+## header.html
 共通部分
 
-##account_password_edit
+## account_password_edit
 古いパスワードと新しいパスワードを入力して、パスワードを再設定するページ
 
-##account_payment
+## account_payment
 お支払情報の確認ページ
 
-##account_payment_edit
+## account_payment_edit
 お支払情報の編集ページ
 
-##account_setting
+## account_setting
 基本情報の確認ページ
 
-##account_setting_edit
+## account_setting_edit
 基本情報の編集ページ
 
-##aquarium_1
+## aquarium_1
 水槽の詳細ページ。便宜上1のナンバーを付けているが、水槽の数だけページをバックで作る。
 
-##aquarium_create
+## aquarium_create
 水槽作成ページ。水槽のサイズを選ぶ
 
-##aquarium_edit_1
+## aquarium_edit_1
 水槽編集ページ。生き物とかを追加できる？
 
-##aquarium_menu
+## aquarium_menu
 水槽（の数）全体が見られるページ。
 
-##cart
+## cart
 カートページ。注文ページに飛べる。
 
-##category
+## category
 カテゴリーページ。便宜上categoryというファイル名を付けているが、カテゴリーの数だけバックでページを生成する
 
-##help
+## help
 ヘルプページ。よくある質問などが確認できる。お問い合わせページに飛べる。
 
-##index
+## index
 最初のページ。メインビジュアル
 
-##information
+## information
 会社概要ページ。何書くのかよく分からん。
 
-##inquiry
+## inquiry
 お問い合わせページ
 
-##inquiry_complete
+## inquiry_complete
 お問い合わせが完了しましたのページ
 
-##inquiry_confirm
+## inquiry_confirm
 お問い合わせの確認ページ。良ければ送信ボタンを押す。
 
-##login
+## login
 ログインページ。ここから新規会員登録ページに飛べる。
 現在、ログインページとマイページへ飛ぶリンクが別々になっているが、ログイン状態の時はマイページだけを表示させ、未ログイン状態の時はログインページだけを表示させる。
 
-##my_page
+## my_page
 マイページ。ここから各種アカウント設定を行える。
 
-##new
+## new
 新着情報ページ、ここに載せるのは新しい抄商品のこと？新しい更新情報のこと？どっち？
 
-order
+## order
 注文ページ。ここで注文する商品の確認を行う。カートページから来ることができる。
 
-order_complete
+## order_complete
 注文が完了しましたページ
 
-order_history
+## order_history
 注文履歴ページ
 
-product
+## product
 検索結果に応じた商品ページ
 
-product_detail
+## product_detail
 商品をクリックすると表示される詳細ページ。ここからカートに入れることができる。
 
-ranking
+## ranking
 商品のランキングページ
 
-sign_up
+## sign_up
 新規会員登録ページ。ログイン画面から来られる。
 
-sign_up_complete
+## sign_up_complete
 会員登録が完了しましたページ
 
-sign_up_confirm
+## sign_up_confirm
 会員登録の入力内容を確認するページ
 
-site_map
+## site_map
 サイトマップ。何書くの？
 
-site_policy
+## site_policy
 サイトポリシー。何書くの？
 
-wish_list
+## wish_list
 欲しいものリスト。削除とカートに入れることができる。
 
-withdrawal
+## withdrawal
 退会ページ
 
-withdrawal_confirm
+## withdrawal_confirm
 退会確認ページ。IDとパスを入力して一致した時に退会処理。
 
-withdrawal_done
+## withdrawal_done
 退会が完了しましたページ
 
 
-#CSS
+# CSS
 ##admin/
 管理者ページのcss
 
-##base.css
+## base.css
 共通css
 
-##normalize.css
+## normalize.css
 ブラウザの誤差を消去
 
-##各ページcss
+## 各ページcss
 
 
-#その他
-##質問
-とりあえずサイトの遷移だけやってみました。
-質問、意見などあれば聞いてください。まだ必要なページがあるとか、ファイル名とかフォルダ構成とか。
-デザインに関してでも。
+# その他
+## 質問
+とりあえずサイトの遷移だけやってみました。  
+質問、意見などあれば聞いてください。まだ必要なページがあるとか、ファイル名とかフォルダ構成とか。  
+デザインに関してでも。  
 
-##意見
-htmlだけで、最低限の見た目だけでいいので（cssは弄らなくてもいい）、バックができたら教えてください。載せる情報とかが決まらないとレイアウトも決まらないので。
-管理者ページはバックができてからじゃないとどうしようもないので、とりあえずバック担当の人に任せます。その他、商品ページやカテゴリページ、注文履歴ページなども、載せる情報が分からないとデザインできないです。バックが完成していなくても載せる状態が分かっていれば教えてください。
-水槽ページはどういう動きがあるのか分からないので、モデリング担当の人に任せます。
-その他、ロゴ、メインビジュアル等なにも決まってないので（ロゴは冬休みまで）意見あればどうぞ。
+## 意見
+htmlだけで、最低限の見た目だけでいいので（cssは弄らなくてもいい）、バックができたら教えてください。載せる情報とかが決まらないとレイアウトも決まらないので。  
+管理者ページはバックができてからじゃないとどうしようもないので、とりあえずバック担当の人に任せます。  
+その他、商品ページやカテゴリページ、注文履歴ページなども、載せる情報が分からないとデザインできないです。  
+バックが完成していなくても載せる状態が分かっていれば教えてください。  
+水槽ページはどういう動きがあるのか分からないので、モデリング担当の人に任せます。  
+その他、ロゴ、メインビジュアル等なにも決まってないので（ロゴは冬休みまで）意見あればどうぞ。  
