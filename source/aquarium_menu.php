@@ -26,7 +26,10 @@
       <p><a href="aquarium_1.php">水槽1</a></p>
       <p><a href="#">水槽2</a></p>
       <p><a href="#">水槽3</a></p>
-      <p><a href="aquarium_create.php">新しく水槽を作成する</a></p>
+      <form action="aquarium_create.php" method="post">
+        <input type="submit" name="" value="水槽を作成する">
+      </form>
+      <p><a href="help.php">水槽とは？</a></p>
     </div>
 
 

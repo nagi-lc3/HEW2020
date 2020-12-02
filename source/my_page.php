@@ -29,11 +29,11 @@
       <p class="#"><a href="wish_list.php">欲しいものリスト</a></p>
       <p class="#"><a href="aquarium_menu.php">水槽</a></p>
       <h3>アカウント情報</h3>
-      <p class="#"><a href="#">基本情報</a></p>
-      <p class="#"><a href="#">お支払方法</a></p>
-      <p class="#"><a href="#">パスワード変更</a></p>
+      <p class="#"><a href="account_setting.php">基本情報</a></p>
+      <p class="#"><a href="account_payment.php">お支払方法</a></p>
+      <p class="#"><a href="account_password_edit.php">パスワード変更</a></p>
       <h3>その他</h3>
-      <p class="#"><a href="#">ヘルプ</a></p>
+      <p class="#"><a href="help.php">ヘルプ</a></p>
       <p class="rogout"><a href="index.php">ログアウト</a></p>
       <p class="#"><a href="withdrawal.php">退会</a></p>
     </div>

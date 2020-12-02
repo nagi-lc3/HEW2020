@@ -22,7 +22,13 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>ランキング</h2>
+      <h2>売れ筋ランキング</h2>
+      <p>1位</p>
+      <p><a href="product_detail.php">商品A</a></p>
+      <p>2位</p>
+      <p><a href="product_detail.php">商品B</a></p>
+      <p>3位</p>
+      <p><a href="product_detail.php">商品C</a></p>
     </div>
 
 

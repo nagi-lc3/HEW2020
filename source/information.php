@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="熱帯魚の通販サイトです。">
   <meta name="keywords" content="熱帯魚, 魚, 水槽, ECサイト, 通販, オンラインショップ">
-  <title>Auarium | 会員登録</title>
+  <title>Auarium | 会社概要</title>
 
   <link rel="shortcut icon" href="images/favicon.ico">
   <link type="text/css" rel="stylesheet" href="css/base.css">
-  <link type="text/css" rel="stylesheet" href="css/sign_up.css">
+  <link type="text/css" rel="stylesheet" href="css/information.css">
 </head>
 
 
@@ -22,15 +22,7 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>会員登録</h2>
-      <p>アカウント名<input type="text"></p>
-      <p>名前<input type="text"></p>
-      <p>住所<input type="text"></p>
-      <p>電話番号<input type="text"></p>
-      <p>メールアドレス<input type="mail"></p>
-      <form action="sign_up_confirm.php" method="post">
-        <input type="submit" name="" value="確認画面へ">
-      </form>
+      <h2>会社概要</h2>
     </div>
 
 

@@ -24,7 +24,9 @@
     <div class="contents">
       <h2>水槽1</h2>
       <p>ビューモード。この辺はレイアウト良く分からんのでモデリングの人に任せる</p>
-      <p><a href="aquarium_edit_1.php">編集する</a></p>
+      <form action="aquarium_edit_1.php" method="post">
+        <input type="submit" name="" value="編集する">
+      </form>
     </div>
 
 

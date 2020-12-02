@@ -26,6 +26,9 @@
       <form action="order.php" method="post">
         <input type="submit" name="" value="レジに進む">
       </form>
+      <form action="" method="post">
+        <input type="submit" name="" value="削除する">
+      </form>
     </div>
 
 

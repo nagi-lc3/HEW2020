@@ -23,6 +23,12 @@
     <!-- メインコンテンツ -->
     <div class="contents">
       <h2>欲しいものリスト</h2>
+      <form action="" method="post">
+        <input type="submit" name="" value="カートに入れる">
+      </form>
+      <form action="" method="post">
+        <input type="submit" name="" value="削除する">
+      </form>
     </div>
 
 

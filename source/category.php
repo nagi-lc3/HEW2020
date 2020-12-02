@@ -23,6 +23,9 @@
     <!-- メインコンテンツ -->
     <div class="contents">
       <h2>カテゴリ</h2>
+      <p><a href="product_detail.php">商品A</a></p>
+      <p><a href="product_detail.php">商品B</a></p>
+      <p><a href="product_detail.php">商品C</a></p>
     </div>
 
 
