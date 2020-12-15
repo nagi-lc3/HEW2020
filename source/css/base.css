@@ -10,7 +10,6 @@ body {
 }
 
 .header1 {
-    background-color: #777;
 }
 
 .header2 {
@@ -23,7 +22,4 @@ body {
 
 .header h1 img {
     width: 180px;
-}
-.search{
-    margin-top: 10px;
 }
