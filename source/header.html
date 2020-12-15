@@ -1,39 +1,60 @@
 <!-- ヘッダー -->
 <div class="header">
-  <h1 class="header_logo"><a href="index.php"><img src="images/logo.png" alt="ロゴ画像"></a></h1>
 
-  <form class="a" action="product.php" method="GET">
-    <select>
-      <option selected="selected" value="search-alias=aps">すべて</option>
-      <option value="search-alias=fish">魚</option>
-      <option value="search-alias=ornaments">装飾品</option>
-      <option value="search-alias=aquarium">水槽</option>
-      <option value="search-alias=etc">etc</option>
-    </select>
-    <input type="search" name="search" placeholder="キーワードを入力">
-    <input type="submit" name="submit" value="検索">
-  </form>
+  <!-- ヘッダー1 -->
+  <div class="header1 container-fluid">
+    <div class="row">
+      <div class="mt-1 px-1">
+        <h1 class="header_logo"><a href="index.php"><img class="logo" src="images/logo1.jpg" alt="ロゴ画像"></a>
+        </h1>
+      </div>
+      <div class="col-6 mt-1 px-1">
+        <form action="product.php" method="GET">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <select class="btn btn-light" title="次の中から検索">
+                <option selected="selected" value="search-alias=aps">すべて</option>
+                <option value="search-alias=fish">魚</option>
+                <option value="search-alias=ornaments">装飾品</option>
+                <option value="search-alias=aquarium">水槽</option>
+                <option value="search-alias=etc">etc</option>
+              </select>
+            </div>
+            <input type="search" class="form-control search" name="search" aria-label="検索">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col mt-3 px-1">
+        <nav class="header_nav">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="my_page.php">マイページ</a></li>
+            <li class="list-inline-item"><a href="login.php">ログイン</a></li>
+            <li class="list-inline-item"><a href="order_history.php">注文履歴</a></li>
+            <li class="list-inline-item"><a href="aquarium_menu.php">水槽</a></li>
+            <li class="list-inline-item"><a href="cart.php">カート</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 
-  <nav class="header_nav">
-    <ul>
-      <li><a href="my_page.php">マイページ（ログイン）</a></li>
-      <li><a href="login.php">ログイン（マイページ）</a></li>
-      <li><a href="order_history.php">注文履歴</a></li>
-      <li><a href="aquarium_menu.php">水槽</a></li>
-      <li><a href="cart.php">カート</a></li>
-    </ul>
-  </nav>
 
-
-  <!-- グローバルナビゲーション -->
-  <nav class="global_nav">
-    <ul>
-      <li><a href="new.php">新着情報</a></li>
-      <li><a href="ranking.php">ランキング</a></li>
-      <li><a href="category.php">魚</a></li>
-      <li><a href="category.php">装飾品</a></li>
-      <li><a href="category.php">水槽</a></li>
-      <li class="b"><a href="category.php">etc</a></li>
-    </ul>
-  </nav>
+  <!-- ヘッダー2 -->
+  <div class="header2 container-fluid">
+    <div class="row p-2">
+      <nav class="global_nav">
+        <ul class="list-inline">
+          <li class="list-inline-item new-info"><a class="p-1" href="new.php">新着情報</a></li>
+          <li class="list-inline-item"><a href="ranking.php">ランキング</a></li>
+          <li class="list-inline-item"><a href="category.php">魚</a></li>
+          <li class="list-inline-item"><a href="category.php">装飾品</a></li>
+          <li class="list-inline-item"><a href="category.php">水槽</a></li>
+          <li class="list-inline-item"><a href="category.php">etc</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </div>
