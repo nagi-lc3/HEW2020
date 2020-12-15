@@ -9,9 +9,7 @@
   <meta name="keywords" content="熱帯魚, 魚, 水槽, ECサイト, 通販, オンラインショップ">
   <title>Auarium | サイトマップ</title>
 
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link type="text/css" rel="stylesheet" href="css/base.css">
-  <link type="text/css" rel="stylesheet" href="css/site_map.css">
+  <?php include_once('./link.html'); ?>
 </head>
 
 
@@ -28,6 +26,8 @@
 
     <?php include_once('./footer.html'); ?>
   </div>
+
+  <?php include_once('./script.html'); ?>
 </body>
 
 </html>

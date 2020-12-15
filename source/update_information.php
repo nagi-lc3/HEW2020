@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="熱帯魚の通販サイトです。">
   <meta name="keywords" content="熱帯魚, 魚, 水槽, ECサイト, 通販, オンラインショップ">
-  <title>Auarium | カテゴリ</title>
+  <title>Auarium | 更新情報</title>
 
   <?php include_once('./link.html'); ?>
 </head>
@@ -20,10 +20,13 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>カテゴリ</h2>
-      <p><a href="product_detail.php">商品A</a></p>
-      <p><a href="product_detail.php">商品B</a></p>
-      <p><a href="product_detail.php">商品C</a></p>
+      <h2>更新情報</h2>
+      <p>2021/01/12</p>
+      <p><a href="#">更新情報1</a></p>
+      <p>2021/01/12</p>
+      <p><a href="#">更新情報2</a></p>
+      <p>2021/01/12</p>
+      <p><a href="#">更新情報3</a></p>
     </div>
 
 

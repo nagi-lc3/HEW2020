@@ -9,17 +9,45 @@ body {
     color: #333;
 }
 
-.header1 {
+.search {
+    width: 60%;
 }
 
-.header2 {
-    background-color: #aaa;
+.search-icon {
+    display: none;
+    padding: 4px 12px;
 }
 
-.footer {
-    background-color: #777;
+.cart-icon {
+    display: none;
+    padding: 4px 12px;
 }
 
-.header h1 img {
-    width: 180px;
+/* ブレイクポイント */
+
+@media only screen and (max-width:1230px) {
+    .search {
+        width: 50%;
+    }
 }
+
+@media only screen and (max-width:991px) {
+    .cart-icon {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:581px) {
+    .search-icon {
+        display: inline-block;
+    }
+    /* 検索エリア */
+    .search {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:582px) {
+    #search {
+        display: none!important;
+    }

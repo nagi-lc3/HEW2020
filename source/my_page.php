@@ -9,9 +9,7 @@
   <meta name="keywords" content="熱帯魚, 魚, 水槽, ECサイト, 通販, オンラインショップ">
   <title>Auarium | マイページ</title>
 
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link type="text/css" rel="stylesheet" href="css/base.css">
-  <link type="text/css" rel="stylesheet" href="css/my_page.css">
+  <?php include_once('./link.html'); ?>
 </head>
 
 
@@ -34,13 +32,16 @@
       <p class="#"><a href="account_password_edit.php">パスワード変更</a></p>
       <h3>その他</h3>
       <p class="#"><a href="help.php">ヘルプ</a></p>
-      <p class="rogout"><a href="index.php">ログアウト</a></p>
+      <p class="#"><a href="index.php">ログアウト</a></p>
       <p class="#"><a href="withdrawal.php">退会</a></p>
+      <p class="#"><a href="login.php">ログイン（後で削除）</a></p>
     </div>
 
 
     <?php include_once('./footer.html'); ?>
   </div>
+
+  <?php include_once('./script.html'); ?>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <p><a href=""><img src="images/mainvisual.png" alt="メインビジュアル"></a></p>
+      <p><a href=""><img src="images/mainvisung" alt="メインビジュアル"></a></p>
       <h2>ここにメインコンテンツを書こうかなと。トップページに載せるコンテンツは何にしようか</h2>
     </div>
 

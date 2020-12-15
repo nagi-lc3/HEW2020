@@ -9,9 +9,7 @@
   <meta name="keywords" content="熱帯魚, 魚, 水槽, ECサイト, 通販, オンラインショップ">
   <title>Auarium | 新着商品</title>
 
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link type="text/css" rel="stylesheet" href="css/base.css">
-  <link type="text/css" rel="stylesheet" href="css/new.css">
+  <?php include_once('./link.html'); ?>
 </head>
 
 
@@ -22,18 +20,20 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>新着情報</h2>
-      <p>2021/01/12</p>
-      <p><a href="#">新着情報1</a></p>
-      <p>2021/01/12</p>
-      <p><a href="#">新着情報2</a></p>
-      <p>2021/01/12</p>
-      <p><a href="#">新着情報3</a></p>
+      <h2>新着商品</h2>
+      <p>2020/12/02</p>
+      <p><a href="product_detail.php">商品A</a></p>
+      <p>2020/12/02</p>
+      <p><a href="product_detail.php">商品B</a></p>
+      <p>2020/12/02</p>
+      <p><a href="product_detail.php">商品C</a></p>
     </div>
 
 
     <?php include_once('./footer.html'); ?>
   </div>
+
+  <?php include_once('./script.html'); ?>
 </body>
 
 </html>
