@@ -20,13 +20,27 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>更新情報</h2>
-      <p>2021/01/12</p>
-      <p><a href="#">更新情報1</a></p>
-      <p>2021/01/12</p>
-      <p><a href="#">更新情報2</a></p>
-      <p>2021/01/12</p>
-      <p><a href="#">更新情報3</a></p>
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">update infromation</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">更新情報</h3>
+          <hr class="w-header my-4">
+
+          <h2>更新情報</h2>
+          <p>2021/01/12</p>
+          <p><a href="#">更新情報1</a></p>
+          <p>2021/01/12</p>
+          <p><a href="#">更新情報2</a></p>
+          <p>2021/01/12</p>
+          <p><a href="#">更新情報3</a></p>
+
+        </section>
+      </div>
+
+
     </div>
 
 

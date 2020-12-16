@@ -19,6 +19,17 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">cart</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">カート</h3>
+          <hr class="w-header my-4">
+        </section>
+      </div>
+
       <div class="container my-5 py-3 z-depth-1 rounded">
 
         <!--Section: Content-->
@@ -123,7 +134,7 @@
                 <tr>
                   <td>
                     <h4 class="mt-2 nav justify-content-end pr-5">
-                      <strong>Total</strong>
+                      <strong>合計</strong>
                     </h4>
                   </td>
                   <td>
@@ -132,7 +143,7 @@
                     </h4>
                   </td>
                   <td colspan="3">
-                    <button type="button" class="btn btn-primary btn-rounded">レジに進む
+                    <button onclick="location.href='order.php'" type="button" class="btn btn-primary btn-rounded">レジに進む
                       <i class="fas fa-angle-right right"></i>
                     </button>
                   </td>

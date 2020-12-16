@@ -20,7 +20,18 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>注文履歴</h2>
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">order history</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">注文履歴</h3>
+          <hr class="w-header my-4">
+
+
+        </section>
+      </div>
     </div>
 
 

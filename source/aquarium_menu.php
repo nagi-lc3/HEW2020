@@ -20,14 +20,26 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>水槽</h2>
-      <p><a href="aquarium_1.php">水槽1</a></p>
-      <p><a href="#">水槽2</a></p>
-      <p><a href="#">水槽3</a></p>
-      <form action="aquarium_create.php" method="post">
-        <input type="submit" name="" value="水槽を作成する">
-      </form>
-      <p><a href="help.php">水槽とは？</a></p>
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">aquarium</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">水槽一覧</h3>
+          <hr class="w-header my-4">
+
+          <p><a href="aquarium_1.php">水槽1</a></p>
+          <p><a href="#">水槽2</a></p>
+          <p><a href="#">水槽3</a></p>
+          <form action="aquarium_create.php" method="post">
+            <input type="submit" name="" value="水槽を作成する">
+          </form>
+          <p><a href="help.php">水槽とは？</a></p>
+
+        </section>
+      </div>
+
     </div>
 
 

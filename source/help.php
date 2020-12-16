@@ -41,14 +41,14 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
                   <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Is this a secure site for purchases? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問1 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
                 <!-- Card body -->
                 <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
                   <div class="card-body">
-                    Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.
+                    解答サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
                   </div>
                 </div>
               </div>
@@ -61,7 +61,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                     <h5 class="black-text font-weight-normal mb-0">
-                      How long are your contracts? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問2 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -81,7 +81,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Can I cancel my subscription? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問3 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -101,7 +101,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問4 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -121,7 +121,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingThree5">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問5 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -141,7 +141,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingThree6">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問6 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -161,7 +161,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingThree7">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問7 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -181,7 +181,7 @@
                 <div class="card-header border-bottom border-light" role="tab" id="headingThree8">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree8" aria-expanded="false" aria-controls="collapseThree8">
                     <h5 class="black-text font-weight-normal mb-0">
-                      Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                      質問8 <i class="fas fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
