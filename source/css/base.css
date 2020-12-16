@@ -10,7 +10,7 @@ body {
 }
 
 .search {
-    width: 60%;
+    width: 70%;
 }
 
 .search-icon {
@@ -23,9 +23,45 @@ body {
     padding: 4px 12px;
 }
 
+#search {
+    padding: 8px 0;
+}
+
+/* 横スクロールナビゲーション */
+
+.nav-tabs-wrap {
+    overflow-y: none;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav-tabs-wrap .nav {
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-tabs-wrap .nav>li {
+    display: inline-block;
+    float: none;
+}
+
+.scroll{
+    text-align: center;
+}
+.suisou {
+    margin-right: 16px;
+}
+/* 横スクロールナビゲーション */
+
 /* ブレイクポイント */
 
-@media only screen and (max-width:1230px) {
+@media only screen and (max-width:1650px) {
+    .search {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:1290px) {
     .search {
         width: 50%;
     }
@@ -37,7 +73,7 @@ body {
     }
 }
 
-@media only screen and (max-width:581px) {
+@media only screen and (max-width:599px) {
     .search-icon {
         display: inline-block;
     }
@@ -47,7 +83,7 @@ body {
     }
 }
 
-@media only screen and (min-width:582px) {
+@media only screen and (min-width:600px) {
     #search {
         display: none!important;
     }
