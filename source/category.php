@@ -1,3 +1,28 @@
+<?php
+session_start();
+
+// ログインしていない場合
+if ($_SESSION['user_name'] == false) {
+  header('Location: ./login.php');
+}
+
+require('./db_connect.php');
+
+// カテゴリ取り出し
+$selected_category = "%" . $_GET['category'] . "%";
+$sql = 'SELECT category_id, category_name FROM categories WHERE category_name LIKE :category_name;';
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(':category_name', $selected_category);
+$stmt->execute();
+$categories = $stmt->fetchAll();
+
+// パラメータ用
+$c_name = $_GET['category'];
+$b_link = './category.php';
+$link = './product.php';
+$link .= '?back=' . $b_link;
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -27,6 +52,20 @@
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">products</h6>
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">商品一覧</h3>
           <hr class="w-header my-4">
+
+
+          <!-- すべて魚装飾品水槽以下 -->
+          <?php if (!empty($categories)) : ?>
+            <?php
+            foreach ($categories as $category) {
+              echo '<p><a href="' . $link . '&c_id=' . $category['category_id'] . '&category=' . $c_name . '">' . $category['category_name'] . '</a></p>';
+            }
+            ?>
+          <?php else : ?>
+            <p>該当する商品はありません</p>
+          <?php endif; ?>
+
+
           <!--First row-->
           <div class="row">
             <!--First column-->

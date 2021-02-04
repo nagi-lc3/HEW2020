@@ -1,3 +1,27 @@
+<?php
+session_start();
+
+// ログインしていない場合
+if ($_SESSION['user_name'] == false) {
+  header('Location: ./login.php');
+}
+
+require('./db_connect.php');
+
+try {
+  $rank_sql = 'SELECT products.product_id, product_name, product_image, SUM(product_quantity) FROM products INNER JOIN product_images ON products.product_id = product_images.product_id INNER JOIN purchase_details ON products.product_id = purchase_details.product_id GROUP BY purchase_details.product_id ORDER BY purchase_details.product_quantity DESC LIMIT 10;';
+  $rank_stmt = $pdo->query($rank_sql);
+  $ranking = $rank_stmt->fetchAll();
+} catch (PDOException $e) {
+  echo $e;
+}
+
+
+$b_link = './ranking.php';
+$link = './product_detail.php';
+$link .= '?back=' . $b_link;
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -28,6 +52,32 @@
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">ranking</h6>
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">売れ筋ランキング</h3>
           <hr class="w-header my-4">
+
+
+          <!-- <p>1位</p>
+          <p><a href="product_detail.php">商品A</a></p>
+          <p>2位</p>
+          <p><a href="product_detail.php">商品B</a></p>
+          <p>3位</p>
+          <p><a href="product_detail.php">商品C</a></p>
+          -->
+          <?php if (!empty($ranking)) : ?>
+            <?php
+            $i = 1;
+            foreach ($ranking as $product) {
+              echo '<p>第' . $i . '位</p>';
+              echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a></p>' . '<br>';
+              echo '<p>' . '<img src="' . $product['product_image'] . '" alt=""></p>' . '<br>';
+              // 個数表示 要らなかったら削除してください
+              echo '<p>' . $product['SUM(product_quantity)'] . '個</p>';
+              $i++;
+            }
+            ?>
+          <?php else : ?>
+            <p>該当する商品はありません</p>
+          <?php endif; ?>
+
+
           <!--First row-->
           <div class="row">
             <!--First column-->

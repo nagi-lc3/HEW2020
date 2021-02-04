@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -25,8 +27,8 @@
         <p>アカウント名<input type="text"></p>
         <p>名前<input type="text"></p>
         <p>住所<input type="text"></p>
-        <p>電話番号<input type="text"></p>
-        <p>メールアドレス<input type="mail"></p>
+        <p>電話番号<input type="tel"></p>
+        <p>メールアドレス<input type="email"></p>
         <input type="submit" name="" value="保存">
       </form>
       <form action="account_setting.php" method="post">

@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// ログインしていない場合
+if ($_SESSION['user_name'] == false) {
+  header('Location: ./login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 

@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -20,8 +22,29 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>会員登録完了</h2>
-      <p><a href="index.php">TOPへ戻る</a></p>
+      <!-- <h2>会員登録完了</h2> -->
+      <h2>
+        <?php
+        // 受け取ったメッセージを表示
+        echo $_GET['msg'];
+
+        if ($_GET['flg']) {
+          // 登録に成功した場合
+          // header('Location: http://localhost/PHP/HEW2020_2/HEW2020/source/my_page.php');
+          header('Location: ./my_page.php');
+          exit;
+        } else {
+          // 失敗した場合
+          // $path = 'http://localhost/PHP/HEW2020_2/HEW2020/source/sign_up.php';
+          $path = './sign_up.php';
+        }
+
+        ?>
+      </h2>
+      <!-- <p><a href="index.php">TOPへ戻る</a></p> -->
+      <p>
+        <?php echo '<a href="' . $path . '">こちらから登録し直してください </a>'; ?>
+      </p>
     </div>
 
 

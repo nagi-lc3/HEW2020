@@ -1,3 +1,33 @@
+<?php
+session_start();
+
+// ログインしていない場合
+if ($_SESSION['user_name'] == false) {
+  header('Location: ./login.php');
+}
+
+require('./db_connect.php');
+$link = './new.php';
+
+try {
+  $sql = 'SELECT product_id, product_name, product_created_at FROM products ORDER BY product_created_at DESC LIMIT 5;';
+  $stmt = $pdo->query($sql);
+  $update = $stmt->fetchAll();
+} catch (PDOException $e) {
+  echo $e;
+}
+
+// 日付取り出し
+// adminのほう作る過程で変更する可能性があります
+if (!empty($update)) {
+  $tmp = explode(" ", $update[0]['product_created_at']);
+  $date = explode("-", $tmp[0]);
+}
+$b_link = './new.php';
+$link = './product_detail.php';
+$link .= '?back=' . $b_link;
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -28,6 +58,30 @@
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">new</h6>
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">新着商品</h3>
           <hr class="w-header my-4">
+
+          <!-- <p>2021/01/12</p>
+          <p><a href="#">新着情報1</a></p>
+          <p>2021/01/12</p>
+          <p><a href="#">新着情報2</a></p>
+          <p>2021/01/12</p>
+          <p><a href="#">新着情報3</a></p> -->
+
+          <?php if (!empty($update)) : ?>
+            <?php
+            $i = 0;
+            foreach ($update as $product) {
+              $tmp = explode(" ", $update[$i]['product_created_at']);
+              $date = explode("-", $tmp[0]);
+              echo '<p>' . $date[0] . "/" . $date[1] . "/" . $date[2] . '<p>';
+              echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a>入荷</p>';
+              $i++;
+            }
+            ?>
+          <?php else : ?>
+            <p>該当する商品はありません</p>
+          <?php endif; ?>
+
+
           <!--First row-->
           <div class="row">
             <!--First column-->

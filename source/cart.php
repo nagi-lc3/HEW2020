@@ -72,7 +72,7 @@
                     </h5>
                   </td>
                   <td>
-                    <input type="number" value="2" aria-label="Search" class="form-control ryou">
+                    <input type="number" value="2" min="1" max="99" aria-label="Search" class="form-control ryou">
                   </td>
                   <td class="font-weight-bold">
                     <strong>￥800</strong>
@@ -95,7 +95,7 @@
                     </h5>
                   </td>
                   <td>
-                    <input type="number" value="2" aria-label="Search" class="form-control ryou">
+                    <input type="number" value="2" min="1" max="99" aria-label="Search" class="form-control ryou">
                   </td>
                   <td class="font-weight-bold">
                     <strong>￥600</strong>
@@ -118,7 +118,7 @@
                     </h5>
                   </td>
                   <td>
-                    <input type="number" value="2" aria-label="Search" class="form-control ryou">
+                    <input type="number" value="1" min="1" max="99" aria-label="Search" class="form-control ryou">
                   </td>
                   <td class="font-weight-bold">
                     <strong>￥1,200</strong>

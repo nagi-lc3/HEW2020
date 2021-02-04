@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -23,8 +25,8 @@
       <h2>退会確認</h2>
       <p>退会されると全てのアカウント情報が削除されます。</p>
       <form action="withdrawal_done.php" method="post">
-        <p>会員ID（メールアドレス）<input type="text" name="id" value=""></p>
-        <p>パスワード<input type="text" name="pass" value=""></p>
+        <p>会員ID（メールアドレス）<input type="email" name="id" value=""></p>
+        <p>パスワード<input type="password" name="pass" value=""></p>
         <input type="submit" name="withdrawal" value="退会">
       </form>
     </div>

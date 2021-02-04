@@ -83,9 +83,6 @@
             <div class="d-flex flex-column justify-content-center align-items-center h-100">
               <h1 class="heading">Welcome To Aquarium</h1>
               <h4 class="subheading font-weight-bold">熱帯魚のオンライン販売専門店です</h4>
-              <div class="mr-auto">
-                <button type="button" class="btn btn-lily btn-margin btn-rounded">Use started <i class="fas fa-caret-right ml-3"></i></button>
-              </div>
             </div>
 
           </div>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Model test </title>
+    <script type="text/javascript" src="./"></script>
+    <script type="text/javascript" src="../libs/loaders/AssimpJSONLoader.js"></script>
+
+    <script type="text/javascript" src="../libs/stats.js"></script>
+    <!-- <script type="text/javascript" src="../libs/dat.gui.js"></script> -->
+    <script type="text/javascript" src="../libs/controls/OrbitControls.js"></script>
+
+    <script type="text/javascript" src="../libs/loaders/OBJLoader.js"></script>
+    <script type="text/javascript" src="../libs/loaders/MTLLoader.js"></script>
+
+    <script type="text/javascript" src="../libs/loaders/ColladaLoader.js"></script>
+    <style>
+        #qwe {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            /* width: 1000px;
+            height: 1000px; */
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="qwe">
+
+    <!-- <div id="Stats-output">
+    </div> -->
+    <!-- Div which will hold the Output -->
+    <div id="WebGL-output">
+    </div>
+    
+    <!-- Javascript code that runs our Three.js examples -->
+    <script type="text/javascript">
+
+    // once everything is loaded, we run our Three.js stuff.
+    function init() {
+
+        var stats = initStats();
+
+        // scene
+        var scene = new THREE.Scene();
+
+        // camera
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+        // create a render and set the size
+        var webGLRenderer = new THREE.WebGLRenderer();
+        // 背景色指定
+        webGLRenderer.setClearColor(new THREE.Color(0x9DCCE0));
+        // 領域のサイズ指定
+        webGLRenderer.setSize(window.innerWidth, window.innerHeight);
+        // webGLRenderer.shadowMap.enabled = true;
+
+        // カメラの初期位置と向き
+        camera.position.x = -30;
+        camera.position.y = 15;
+        camera.position.z = 15;
+        camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+        // マウスでカメラをコントロール
+        var orbit = new THREE.OrbitControls(camera);
+
+        // Light
+        var dir1 = new THREE.DirectionalLight();
+        dir1.position.set(-30, 30, -30);
+        scene.add(dir1);
+
+        var dir2 = new THREE.DirectionalLight();
+        dir2.position.set(-30, 30, 30);
+        scene.add(dir2);
+
+        var dir3 = new THREE.DirectionalLight();
+        dir3.position.set(30, 30, -30);
+        scene.add(dir3);
+
+        // add spotlight for the shadows
+        // var spotLight = new THREE.SpotLight(0xffffff);
+        // spotLight.position.set(30, 30, 30);
+        // scene.add(spotLight);
+
+        // add the output of the renderer to the html element
+        document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
+        
+
+        // call the render function
+        // var step = 0;
+
+
+        // setup the control gui
+        // var controls = new function () {
+        //     // we need the first child, since it's a multimaterial
+
+
+        // };
+
+        // var group;
+        // var gui = new dat.GUI();
+
+
+
+// 3DS形式のモデルデータを読み込む
+const loader = new THREE.ColladaLoader();
+// 3dsファイルのパスを指定
+loader.load('../assets/models/dae/Truck_dae.dae', (collada) => {
+  // 読み込み後に3D空間に追加
+  const model = collada.scene;
+  model.scale.set(0.5, 0.5, 0.5);
+  scene.add(model);
+});
+
+        render();
+
+
+        function render() {
+            stats.update();
+
+            orbit.update();
+
+            // if (group) {
+            //     group.rotation.y += 0.006;
+            //     // group.rotation.x+=0.006;
+            // }
+
+            // render using requestAnimationFrame
+            requestAnimationFrame(render);
+            webGLRenderer.render(scene, camera);
+        }
+
+        function initStats() {
+
+            var stats = new Stats();
+            // stats.setMode(0); // 0: fps, 1: ms
+
+            // Align top-left
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+
+            // FPSを画面上に表示
+            // document.getElementById("Stats-output").appendChild(stats.domElement);
+
+            return stats;
+        }
+    }
+    window.onload = init;
+</script>
+</div>
+</body>
+</html>

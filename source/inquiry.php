@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -22,10 +24,20 @@
     <div class="contents">
       <h2>お問い合わせ</h2>
       <form action="inquiry_confirm.php" method="post">
-        <p>件名<input type="text"></p>
+        <!-- <p>件名<input type="text"></p>
         <p>メールアドレス<input type="text"></p>
         <p>カテゴリ<input type="text"></p>
         <p>お問い合わせ内容<input type="text"></p>
+         -->
+        <p>件名<input type="text" name="title"></p>
+        <p>メールアドレス<input type="email" name="mail_address"></p>
+        <p>カテゴリ</p>
+        <select name="category" id="">
+          <option value="1" selected>category1</option>
+          <option value="2">category2</option>
+          <option value="3">category3</option>
+        </select>
+        <p>お問い合わせ内容<input type="text" name="content"></p>
         <input type="submit" name="" value="確認画面へ">
       </form>
     </div>
