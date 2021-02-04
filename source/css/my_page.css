@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.contents .main_contents p {
+    background-color: #006699;
+    border-top: 1px solid #000;
+    margin: 0;
+    text-decoration: none;
+}
+
+.contents .main_contents p a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 15px;
+}
+
+.contents .main_contents p a:hover {
+    background-color: #0077aa;
+    opacity: 0.8;
+}
+
+.contents .main_contents p a::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 40px;
+    top: calc(50% - 2px);
+    border-top: solid 1px;
+    border-right: solid 1px;
+    transform: rotate(45deg) translateY(-50%);
+    color: #c2c2c2;
+}
+
+.contents .main_contents h3 {
+    margin-bottom: 0;
+    margin-bottom: 3px;
+    padding-left: 15px;
+}
+
+.main_contents {
+    margin-top: 98px;
+}
+
+.first {
+    margin-top: 58px;
+}
