@@ -72,35 +72,69 @@ if (!empty($_POST)) {
     <?php include_once('./header.html'); ?>
 
 
+    <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>アカウント情報</h2>
-      <!-- <form action="account_setting.php" method="post"> -->
-      <form action="" method="post">
-        <!-- <p>現在のパスワード<input type="text"></p>
-                <p>新しいパスワード<input type="text"></p>
-                <p>新しいパスワード（2回目）<input type="text"></p>
-                 -->
-        <!-- エラーメッセージがある場合は表示 -->
-        <?php if (!empty($err_msg)) : ?>
-          <?php echo '<ul>'; ?>
-          <?php
-          foreach ((array)$err_msg as $error) {
-            echo '<li>' . $error . '</li>';
-          }
-          ?>
-          <?php echo '</ul>'; ?>
-        <?php endif ?>
-        <p>現在のパスワード<input type="password" name="now_password"></p>
-        <p>新しいパスワード<input type="password" name="new_password"></p>
-        <p>新しいパスワード（2回目）<input type="password" name="password2"></p>
-        <input type="submit" name="" value="保存">
-      </form>
-      <!-- <form action="account_setting.php" method="post"> -->
-      <form action="./my_page.php" method="post">
-        <input type="submit" name="" value="戻る">
-      </form>
-    </div>
 
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">change_password</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">パスワード変更</h3>
+          <hr class="w-header my-4">
+
+          <div class="container my-5 py-5 z-depth-1 col-lg-6">
+
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="">
+
+                  <!-- Default form register -->
+                  <form action="" method="post">
+                    <!-- エラーメッセージがある場合は表示 -->
+                    <?php if (!empty($err_msg)) : ?>
+                      <?php echo '<ul>'; ?>
+                      <?php
+                      foreach ((array)$err_msg as $error) {
+                        echo '<li>' . $error . '</li>';
+                      }
+                      ?>
+                      <?php echo '</ul>'; ?>
+                    <?php endif ?>
+
+                    <!-- 現在のパスワード -->
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">現在のパスワード</small>
+                    <input type="text" name="now_password" id="defaultRegisterFormUserName" class="form-control mb-3" placeholder="haltaro123">
+
+                    <!-- 新しいパスワード -->
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">新しいパスワード</small>
+                    <input type="password" name="new_password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="password">
+
+                    <!-- 新しいパスワード（2回目） -->
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">新しいパスワード（2回目）</small>
+                    <input type="password" name="password2" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="password">
+
+                    <!-- Sign up button -->
+                    <button class="btn btn-primary my-4 btn-block" type="submit">保存</button>
+
+                  </form>
+                  <!-- Default form register -->
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!--Section: Content-->
+          </div>
+
+      </div>
+    </div>
 
     <?php include_once('./footer.html'); ?>
   </div>
