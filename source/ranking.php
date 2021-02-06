@@ -63,18 +63,16 @@ $link .= '?back=' . $b_link;
           -->
           <?php if (!empty($ranking)) : ?>
             <?php
-            $i = 1;
-            foreach ($ranking as $product) {
-              echo '<p>第' . $i . '位</p>';
-              echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a></p>' . '<br>';
-              echo '<p>' . '<img src="' . $product['product_image'] . '" alt=""></p>' . '<br>';
-              // 個数表示 要らなかったら削除してください
-              echo '<p>' . $product['SUM(product_quantity)'] . '個</p>';
-              $i++;
-            }
+            // $i = 1;
+            // foreach ($ranking as $product) {
+            //   echo '<p>第' . $i . '位</p>';
+            //   echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a></p>' . '<br>';
+            //   echo '<p>' . '<img src="' . $product['product_image'] . '" alt=""></p>' . '<br>';
+            //   $i++;
+            // }
             ?>
           <?php else : ?>
-            <p>該当する商品はありません</p>
+            <!-- <p>該当する商品はありません</p> -->
           <?php endif; ?>
 
 

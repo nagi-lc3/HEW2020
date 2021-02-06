@@ -30,7 +30,9 @@ if (!empty($_POST)) {
     $_SESSION['user_id'] = $member['user_id'];
     $_SESSION['user_name'] = $member['user_name'];
     $msg = 'ログインしました。';
-    $link = '<a href=' . $path_to_index . '>トップページへ</a>';
+    // $link = '<a href=' . $path_to_index . '>トップページへ</a>';
+    header('Location:' . $path_to_index . '?msg=' . $msg);
+    exit;
   } else {
     $msg = 'メールアドレスもしくはパスワードが間違っています。';
     $link = '<a href=' . $path_to_login . '>やり直す</a>';
@@ -102,7 +104,9 @@ if (!empty($_POST)) {
                                 <label for="form4">パスワード</label>
                               </div>
                               <div class="md-form">
-                                <a href="#"><p>パスワードを忘れましたか？</p></a>
+                                <a href="#">
+                                  <p>パスワードを忘れましたか？</p>
+                                </a>
                               </div>
                               <div class="text-center my-3">
                                 <button class="btn btn-primary btn-block">ログイン</button>

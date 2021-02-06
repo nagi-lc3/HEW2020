@@ -68,17 +68,17 @@ $link .= '?back=' . $b_link;
 
           <?php if (!empty($update)) : ?>
             <?php
-            $i = 0;
-            foreach ($update as $product) {
-              $tmp = explode(" ", $update[$i]['product_created_at']);
-              $date = explode("-", $tmp[0]);
-              echo '<p>' . $date[0] . "/" . $date[1] . "/" . $date[2] . '<p>';
-              echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a>入荷</p>';
-              $i++;
-            }
+            // $i = 0;
+            // foreach ($update as $product) {
+            //   $tmp = explode(" ", $update[$i]['product_created_at']);
+            //   $date = explode("-", $tmp[0]);
+            //   echo '<p>' . $date[0] . "/" . $date[1] . "/" . $date[2] . '<p>';
+            //   echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a>入荷</p>';
+            //   $i++;
+            // }
             ?>
           <?php else : ?>
-            <p>該当する商品はありません</p>
+            <!-- <p>該当する商品はありません</p> -->
           <?php endif; ?>
 
 

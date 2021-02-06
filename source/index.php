@@ -1,3 +1,10 @@
+<?php
+session_start();
+$msg = '';
+if (!empty($_GET['msg'])) {
+  $msg = $_GET['msg'];
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -68,46 +75,49 @@
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">top</h6>
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">トップページ</h3>
+          <?php if (!empty($msg)) {
+            echo '<p>' . $msg . '</p>'; // ログイン/ログアウトしました
+          } ?>
           <hr class="w-header my-4">
         </section>
       </div>
-    <!-- Main navigation -->
-    <header>
-      <!-- Intro -->
-      <section class="view">
+      <!-- Main navigation -->
+      <header>
+        <!-- Intro -->
+        <section class="view">
 
-        <div class="row">
+          <div class="row">
 
-          <div class="col-md-6">
+            <div class="col-md-6">
 
-            <div class="d-flex flex-column justify-content-center align-items-center h-100">
-              <h1 class="heading">Welcome To Aquarium</h1>
-              <h4 class="subheading font-weight-bold">熱帯魚のオンライン販売専門店です</h4>
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-
-            <div class="view">
-              <img src="https://images.pexels.com/photos/325045/pexels-photo-325045.jpeg" class="img-fluid" alt="smaple image">
-              <div class="mask flex-center hm-gradient">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="heading">Welcome To Aquarium</h1>
+                <h4 class="subheading font-weight-bold">熱帯魚のオンライン販売専門店です</h4>
               </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="view">
+                <img src="https://images.pexels.com/photos/325045/pexels-photo-325045.jpeg" class="img-fluid" alt="smaple image">
+                <div class="mask flex-center hm-gradient">
+                </div>
+              </div>
+
             </div>
 
           </div>
 
-        </div>
+        </section>
+        <!-- Intro -->
 
-      </section>
-      <!-- Intro -->
-
-    </header>
-    <!-- Main navigation -->
-  </div>
+      </header>
+      <!-- Main navigation -->
+    </div>
 
 
-  <?php include_once('./footer.html'); ?>
+    <?php include_once('./footer.html'); ?>
   </div>
 
   <?php include_once('./script.html'); ?>
