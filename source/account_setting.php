@@ -141,7 +141,7 @@ if (!empty($_SESSION)) {
                   <?php endif; ?>
 
                   <!-- ユーザーネーム -->
-                  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">ユーザーネーム</small>
+                  <small id="" class="form-text text-muted sign_up_label">ユーザーネーム</small>
                   <p><?php if (!empty($_SESSION)) {
                         echo h($user_name);
                       } ?></p>
@@ -149,14 +149,14 @@ if (!empty($_SESSION)) {
                   <div class="form-row mb-3">
                     <div class="col">
                       <!-- 姓 -->
-                      <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">姓</small>
-                      <p><?php if (!empty($_SESSION)) {
-                            echo h($last_name);
-                          }  ?></p>
+                      <small id="" class="form-text text-muted sign_up_label">姓</small>
+                      <p class=""><?php if (!empty($_SESSION)) {
+                                    echo h($last_name);
+                                  }  ?></p>
                     </div>
                     <div class="col">
                       <!-- 名 -->
-                      <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">名</small>
+                      <small id="" class="form-text text-muted sign_up_label">名</small>
                       <p><?php if (!empty($_SESSION)) {
                             echo h($first_name);
                           }  ?></p>
@@ -164,19 +164,19 @@ if (!empty($_SESSION)) {
                   </div>
 
                   <!-- 住所 -->
-                  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">住所</small>
+                  <small id="" class="form-text text-muted sign_up_label">住所</small>
                   <p><?php if (!empty($_SESSION)) {
                         echo h($address);
                       }  ?></p>
 
                   <!-- 電話番号 -->
-                  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">電話番号</small>
+                  <small id="" class="form-text text-muted sign_up_label">電話番号</small>
                   <p><?php if (!empty($_SESSION)) {
                         echo h($phone_number);
                       }  ?></p>
 
                   <!-- E-mail -->
-                  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">メールアドレス</small>
+                  <small id="" class="form-text text-muted sign_up_label">メールアドレス</small>
                   <p><?php if (!empty($_SESSION)) {
                         echo h($mail_address);
                       }  ?></p>
@@ -196,7 +196,7 @@ if (!empty($_SESSION)) {
             </section>
             <!--Section: Content-->
           </div>
-
+        </section>
       </div>
     </div>
 

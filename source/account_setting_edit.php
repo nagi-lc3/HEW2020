@@ -41,7 +41,7 @@
               <div class="row d-flex justify-content-center">
 
                 <!--Grid column-->
-                <div class="">
+                <div class="w-75">
 
                   <!-- Default form register -->
                   <form action="" method="post">
@@ -87,7 +87,7 @@
             </section>
             <!--Section: Content-->
           </div>
-
+        </section>
       </div>
     </div>
 

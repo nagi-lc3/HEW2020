@@ -34,14 +34,6 @@ function h($value)
     <!-- メインコンテンツ -->
     <div class="contents">
       <h2>会員登録確認</h2>
-      <!-- <p>アカウント名</p>
-      <p>名前</p>
-      <p>住所</p>
-      <p>電話番号</p>
-      <p>メールアドレス</p>
-      <form action="sign_up_complete.php" method="post">
-        <input type="submit" name="" value="登録">
-      </form> -->
 
       <!-- エラーメッセージがある場合は表示 -->
       <?php if (!empty($errors)) : ?>

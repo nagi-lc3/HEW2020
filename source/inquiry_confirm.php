@@ -67,65 +67,102 @@ if (!empty($_POST)) {
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>お問い合わせ確認</h2>
-      <!-- <p>件名</p>
-      <p>メールアドレス</p>
-      <p>カテゴリ</p>
-      <p>お問い合わせ内容</p> -->
-      <form action="./inquiry_complete.php" method="post">
-        <?php if (!empty($err_msg)) : ?>
-          <?php echo '<ul>'; ?>
-          <?php
-          foreach ((array)$err_msg as $error) {
-            echo '<li>' . $error . '</li>';
-          }
-          echo 'やり直してください';
-          $link =  '<p><a href="./inquiry.php">入力画面へ戻る</a></p>';
-          ?>
-          <?php echo '</ul>'; ?>
-        <?php else : ?>
-          <?php
-          $link = '<input type="submit" name="" value="送信">';
-          // 送信済みかどうか判定するフラグ
-          $_SESSION['status_flg'] = 1;
-          ?>
-          <!-- <form action="inquiry_complete.php" method="post">
-        <input type="submit" name="" value="送信">
-      </form> -->
-        <?php endif; ?>
-        <p>件名：<?php echo $title ?>
-          <input type="hidden" name="title" value="<?php echo $title; ?>">
-        </p>
-        <p>メールアドレス：<?php echo $mail_address ?>
-        </p>
-        <input type="hidden" name="mail_address" value="<?php echo $mail_address; ?>">
-        <p>カテゴリ：</p>
 
-        <select name="category"><br>
-          <option value="1" <?php if ($category == "1") {
-                              echo "selected";
-                            } ?>>category1
-          </option>
-          <option value="2" <?php if ($category == "2") {
-                              echo "selected";
-                            } ?>>category2
-          </option>
-          <option value="3" <?php if ($category == "3") {
-                              echo "selected";
-                            } ?>>category3
-          </option>
-        </select>
-        <p name="content">お問い合わせ内容：<?php echo $content ?>
-          <input type="hidden" name="content" value="<?php echo $content; ?>">
-        </p>
-        <!-- <form action="inquiry_complete.php" method="post">
-        <input type="submit" name="" value="送信">
-      </form> -->
-        <!-- 送信or戻る $linkに入ってるので適宜変更してください -->
-        <?php echo $link; ?>
-      </form>
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">inquiry_comfirm</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">お問い合わせ確認</h3>
+          <hr class="w-header my-4">
+
+          <div class="container my-5 py-5 z-depth-1">
+
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="w-75">
+
+                  <form action="./inquiry_complete.php" method="post">
+
+                    <?php if (!empty($err_msg)) : ?>
+                      <?php echo '<ul>'; ?>
+                      <?php
+                      foreach ((array)$err_msg as $error) {
+                        echo '<li>' . $error . '</li>';
+                      }
+                      echo 'やり直してください';
+                      $link =  '<p><a href="./inquiry.php">入力画面へ戻る</a></p>';
+                      ?>
+                      <?php echo '</ul>'; ?>
+
+                    <?php else : ?>
+                      <?php
+                      $link = '<button class="btn btn-primary mt-5 btn-block w-50" type="submit">送信</button>';
+                      // 送信済みかどうか判定するフラグ
+                      $_SESSION['status_flg'] = 1;
+                      ?>
+
+                    <?php endif; ?>
+
+                    <!-- 件名 -->
+                    <small id="" class="form-text text-muted sign_up_label">件名</small>
+                    <p><?php echo $title ?>
+                      <input type="hidden" name="title" value="<?php echo $title; ?>">
+                    </p>
+
+                    <!-- メールアドレス -->
+                    <small id="" class="form-text text-muted sign_up_label">メールアドレス</small>
+                    <p><?php echo $mail_address ?>
+                      <input type="hidden" name="mail_address" value="<?php echo $mail_address; ?>">
+                    </p>
+
+                    <!-- カテゴリ -->
+                    <small id="" class="form-text text-muted sign_up_label">カテゴリ</small>
+                    <p>
+                      <select name="category">
+                        <option value="1" <?php if ($category == "1") {
+                                            echo "selected";
+                                          } ?>>category1
+                        </option>
+                        <option value="2" <?php if ($category == "2") {
+                                            echo "selected";
+                                          } ?>>category2
+                        </option>
+                        <option value="3" <?php if ($category == "3") {
+                                            echo "selected";
+                                          } ?>>category3
+                        </option>
+                      </select>
+                    </p>
+
+                    <!-- お問い合わせ内容 -->
+                    <small id="" class="form-text text-muted sign_up_label">お問い合わせ内容</small>
+                    <p><?php echo $content ?>
+                      <input type="hidden" name="content" value="<?php echo $content; ?>">
+                    </p>
+
+                    <!-- 送信or戻る $linkに入ってるので適宜変更してください -->
+                    <?php echo $link; ?>
+                  </form>
+
+                  <!-- Sign up button -->
+
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+          </div>
+          <!--Section-->
+        </section>
+      </div>
     </div>
-
 
     <?php include_once('./footer.html'); ?>
   </div>

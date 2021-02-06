@@ -104,9 +104,7 @@ if (!empty($_POST)) {
                                 <label for="form4">パスワード</label>
                               </div>
                               <div class="md-form">
-                                <a href="#">
-                                  <p>パスワードを忘れましたか？</p>
-                                </a>
+                                <p><a href="#">パスワードを忘れましたか？</a></p>
                               </div>
                               <div class="text-center my-3">
                                 <button class="btn btn-primary btn-block">ログイン</button>

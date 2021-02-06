@@ -20,15 +20,55 @@
     <?php include_once('./header.html'); ?>
 
 
+
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>退会確認</h2>
-      <p>退会されると全てのアカウント情報が削除されます。</p>
-      <form action="withdrawal_done.php" method="post">
-        <p>会員ID（メールアドレス）<input type="email" name="id" value=""></p>
-        <p>パスワード<input type="password" name="pass" value=""></p>
-        <input type="submit" name="withdrawal" value="退会">
-      </form>
+
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">withdrawal_confirm</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">退会確認</h3>
+          <hr class="w-header my-4">
+
+          <div class="container my-5 py-5 z-depth-1 col-lg-6">
+
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="">
+
+                  <!-- Default form register -->
+                  <form action="withdrawal_done.php" method="post">
+
+                    <!-- E-mail -->
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">メールアドレス</small>
+                    <input type="email" name="id" id="defaultRegisterFormEmail" class="form-control mb-3" placeholder="sample@sample.com">
+
+                    <!-- パスワード -->
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">パスワード</small>
+                    <input type="password" name="pass" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="">
+
+                    <!-- Sign up button -->
+                    <button class="btn btn-primary my-4 btn-block" type="submit">退会</button>
+
+                  </form>
+                  <!-- Default form register -->
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!--Section: Content-->
+          </div>
+        </section>
+      </div>
     </div>
 
 

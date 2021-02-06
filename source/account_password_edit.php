@@ -129,12 +129,12 @@ if (!empty($_POST)) {
                 <!--Grid column-->
               </div>
               <!--Grid row-->
-            </section>
-            <!--Section: Content-->
           </div>
-
+          <!--Section-->
+        </section>
       </div>
     </div>
+
 
     <?php include_once('./footer.html'); ?>
   </div>

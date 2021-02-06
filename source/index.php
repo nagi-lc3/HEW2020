@@ -67,20 +67,21 @@ if (!empty($_GET['msg'])) {
       }
     </style>
 
-    <div class="contents">
-      <div class="container my-5">
+    <!-- <div class="contents">
+      <div class="container my-5"> -->
+
+          <?php if (!empty($msg)) {
+            echo '<div class="row justify-content-center my-2"><ul class="messages pl-0 w-50 mb-0" style="list-style: none;"><li class="alert alert-primary mb-0">' . $msg . '</li></ul></div>'; // ログイン/ログアウトしました</li>
+          } ?>
 
         <!-- Section -->
-        <section>
+        <!-- <section> -->
           <!-- タイトル -->
-          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">top</h6>
+          <!-- <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">top</h6>
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">トップページ</h3>
-          <?php if (!empty($msg)) {
-            echo '<p>' . $msg . '</p>'; // ログイン/ログアウトしました
-          } ?>
           <hr class="w-header my-4">
         </section>
-      </div>
+      </div> -->
       <!-- Main navigation -->
       <header>
         <!-- Intro -->
