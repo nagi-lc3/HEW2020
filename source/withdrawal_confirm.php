@@ -36,7 +36,7 @@
           <div class="container my-5 py-5 z-depth-1 col-lg-6">
 
             <!--Section: Content-->
-            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
               <!--Grid row-->
               <div class="row d-flex justify-content-center">

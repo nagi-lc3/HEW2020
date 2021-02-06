@@ -35,7 +35,7 @@
           <div class="container my-5 py-5 z-depth-1">
 
             <!--Section: Content-->
-            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
               <!--Grid row-->
               <div class="row d-flex justify-content-center">
@@ -68,7 +68,7 @@
                     <textarea class="form-control mb-3 w-100" name="content" rows="20" placeholder=""></textarea>
 
                     <!-- 確認画面へ -->
-                    <div class="form-group row justify-content-center mb-0">
+                    <div class="row justify-content-center mb-0">
                       <button class="btn btn-primary mt-5 btn-block w-50" type="submit">確認画面へ</button>
                     </div>
 

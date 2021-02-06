@@ -118,10 +118,10 @@ if (!empty($_SESSION)) {
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">基本情報</h3>
           <hr class="w-header my-4">
 
-          <div class="container my-5 py-5 z-depth-1 col-lg-6">
+          <div class="container my-5 py-5 z-depth-1 col-lg-8">
 
             <!--Section: Content-->
-            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
               <!--Grid row-->
               <div class="row d-flex justify-content-center">

@@ -29,16 +29,16 @@
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">新規会員登録</h3>
           <hr class="w-header my-4">
 
-          <div class="container my-5 py-5 z-depth-1 col-lg-6">
+          <div class="container my-5 py-5 z-depth-1 col-lg-8">
 
             <!--Section: Content-->
-            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
               <!--Grid row-->
               <div class="row d-flex justify-content-center">
 
                 <!--Grid column-->
-                <div class="">
+                <div class="w-75">
 
                   <!-- Default form register -->
                   <form action="./sign_up_confirm.php" method="POST">
@@ -70,7 +70,7 @@
 
                     <!-- 郵便番号 -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">郵便番号<span class="badge badge-danger ml-1 ">必須</span></small>
-                    <input type="text" name="postal_code" id="defaultRegisterPostalCode" class="form-control mb-3" placeholder="000-1234">
+                    <input type="text" name="postal_code" id="defaultRegisterPostalCode" class="form-control mb-3" placeholder="0001234">
 
                     <!-- 住所 -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">住所<span class="badge badge-danger ml-1 ">必須</span></small>

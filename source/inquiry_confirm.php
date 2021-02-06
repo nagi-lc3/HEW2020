@@ -80,7 +80,7 @@ if (!empty($_POST)) {
           <div class="container my-5 py-5 z-depth-1">
 
             <!--Section: Content-->
-            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
               <!--Grid row-->
               <div class="row d-flex justify-content-center">
@@ -88,7 +88,7 @@ if (!empty($_POST)) {
                 <!--Grid column-->
                 <div class="w-75">
 
-                  <form action="./inquiry_complete.php" method="post">
+                  <form class="" action="./inquiry_complete.php" method="post">
 
                     <?php if (!empty($err_msg)) : ?>
                       <?php echo '<ul>'; ?>
@@ -103,7 +103,7 @@ if (!empty($_POST)) {
 
                     <?php else : ?>
                       <?php
-                      $link = '<button class="btn btn-primary mt-5 btn-block w-50" type="submit">送信</button>';
+                      $link = '<div class="row justify-content-center mb-0"><button class="btn btn-primary mt-5 btn-block w-50" type="submit">送信</button></div>';
                       // 送信済みかどうか判定するフラグ
                       $_SESSION['status_flg'] = 1;
                       ?>
@@ -125,7 +125,7 @@ if (!empty($_POST)) {
                     <!-- カテゴリ -->
                     <small id="" class="form-text text-muted sign_up_label">カテゴリ</small>
                     <p>
-                      <select name="category">
+                      <select class="browser-default custom-select mb-3" name="category" id="">
                         <option value="1" <?php if ($category == "1") {
                                             echo "selected";
                                           } ?>>category1
@@ -143,7 +143,7 @@ if (!empty($_POST)) {
 
                     <!-- お問い合わせ内容 -->
                     <small id="" class="form-text text-muted sign_up_label">お問い合わせ内容</small>
-                    <p><?php echo $content ?>
+                    <p class="text-break"><?php echo $content ?>
                       <input type="hidden" name="content" value="<?php echo $content; ?>">
                     </p>
 

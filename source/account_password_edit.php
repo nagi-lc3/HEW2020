@@ -87,7 +87,7 @@ if (!empty($_POST)) {
           <div class="container my-5 py-5 z-depth-1 col-lg-6">
 
             <!--Section: Content-->
-            <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
               <!--Grid row-->
               <div class="row d-flex justify-content-center">
@@ -110,15 +110,15 @@ if (!empty($_POST)) {
 
                     <!-- 現在のパスワード -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">現在のパスワード</small>
-                    <input type="text" name="now_password" id="defaultRegisterFormUserName" class="form-control mb-3" placeholder="haltaro123">
+                    <input type="password" name="now_password" id="defaultRegisterFormUserName" class="form-control mb-3" placeholder="">
 
                     <!-- 新しいパスワード -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">新しいパスワード</small>
-                    <input type="password" name="new_password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="password">
+                    <input type="password" name="new_password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="">
 
                     <!-- 新しいパスワード（2回目） -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">新しいパスワード（2回目）</small>
-                    <input type="password" name="password2" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="password">
+                    <input type="password" name="password2" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="">
 
                     <!-- Sign up button -->
                     <button class="btn btn-primary my-4 btn-block" type="submit">保存</button>
