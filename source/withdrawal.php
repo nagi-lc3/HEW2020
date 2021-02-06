@@ -20,14 +20,23 @@
     <?php include_once('./header.html'); ?>
 
 
+
     <!-- メインコンテンツ -->
-    <div class="contents">
-      <h2>退会</h2>
-      <h3>注意</h3>
-      <p>本当に退会しますか？</p>
-      <p>今までの購入履歴やアカウント情報、マイ水槽など全て削除され、利用できなくなります。<br>よろしければ次へのボタンを押してください。<br>退会しない場合は戻るボタンを押してください。</p>
-      <p><a href="my_page.php">戻る</a></p>
-      <p><a href="withdrawal_confirm.php">次へ</a></p>
+    <div class="container my-5">
+      <!--Section: Content-->
+      <section>
+
+        <h6 class="font-weight-normal text-uppercase font-small grey-text mb-4 text-center">withdrawal</h6>
+        <!-- Section heading -->
+        <h3 class="font-weight-bold black-text mb-4 pb-2 text-center">退会</h3>
+        <hr class="w-header">
+        <!-- Section description -->
+        <h4 class="lead text-danger mx-auto mt-4 pt-2 mb-5 text-center">本当に退会しますか？</h4>
+        <p class="lead text-danger mx-auto mt-4 pt-2 mb-5 text-center">今までの購入履歴やアカウント情報、マイ水槽など全て削除され、利用できなくなります。</p>
+
+        <p class="text-center"><a class="btn btn-primary btn-rounded waves-effect waves-light" href="withdrawal_confirm.php">次へ</a></p>
+
+      </section>
     </div>
 
 

@@ -33,69 +33,148 @@ function h($value)
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>会員登録確認</h2>
-      <!-- <p>アカウント名</p>
-      <p>名前</p>
-      <p>住所</p>
-      <p>電話番号</p>
-      <p>メールアドレス</p>
-      <form action="sign_up_complete.php" method="post">
-        <input type="submit" name="" value="登録">
-      </form> -->
 
-      <!-- エラーメッセージがある場合は表示 -->
-      <?php if (!empty($errors)) : ?>
-        <?php echo '<ul>'; ?>
-        <?php
-        foreach ((array)$errors as $error) {
-          echo '<li>' . $error . '</li>';
-        }
+      <div class="container my-5">
 
-        // 入力やり直し
-        $link = '<a href=' . $path_to_sign_up . '>もどる</a>';
-        ?>
-        <?php echo '</ul>'; ?>
-      <?php else :
-        $link = '<input type="submit" value="登録">';
-      endif; ?>
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">sign_up_confirm</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">会員登録確認</h3>
+          <hr class="w-header my-4">
 
-      <form action="./insert.php" method="POST">
-        姓
-        <input type="text" name="last_name" value="<?php echo h($_POST["last_name"]); ?>">
-        名
-        <input type="text" name="first_name" value="<?php echo h($_POST["first_name"]); ?>"><br>
-        ユーザネーム
-        <input type="text" name="user_name" value="<?php echo h($_POST["user_name"]); ?>"><br>
-        パスワード
-        <input type="password" name="password" value="<?php echo h($_POST["password"]); ?>"><br>
-        メールアドレス
-        <input type="mail_address" name="mail_address" value="<?php echo h($_POST["mail_address"]); ?>"><br>
-        郵便番号
-        <input type="email" name="postal_code" value="<?php echo h($_POST["postal_code"]); ?>"><br>
-        住所
-        <input type="text" name="address" value="<?php echo h($_POST["address"]); ?>"><br>
-        電話番号
-        <input type="tel" name="phone_number" value="<?php echo h($_POST["phone_number"]); ?>"><br>
-        生年月日
-        <input type="text" name="birthday" value="<?php echo h($_POST["birthday"]); ?>"><br>
+          <div class="container my-5 py-5 z-depth-1 col-lg-8">
 
-        第三者質問と答え
-        <select name="question"><br>
-          <option value="1" <?php if ($_POST["question"] == "1") {
-                              echo "selected";
-                            } ?>>1、母の旧姓</option>
-          <option value="2" <?php if ($_POST["question"] == "2") {
-                              echo "selected";
-                            } ?>>2、好きな食べ物</option>
-          <option value="3" <?php if ($_POST["question"] == "3") {
-                              echo "selected";
-                            } ?>>3、自分の母校</option>
-        </select>
-        <input type="text" name="answer" value="<?php echo h($_POST["answer"]); ?>"><br>
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 dark-grey-text">
 
-        <!-- 入力ミスがある場合もどる / ない場合登録ボタン  -->
-        <?php echo $link; ?>
-      </form>
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="w-75">
+
+                  <!-- エラーメッセージがある場合は表示 -->
+                  <?php if (!empty($errors)) : ?>
+                    <?php echo '<ul>'; ?>
+                    <?php
+                    foreach ((array)$errors as $error) {
+                      echo '<li>' . $error . '</li>';
+                    }
+
+                    // 入力やり直し
+                    $link = '<a href=' . $path_to_sign_up . '>もどる</a>';
+                    ?>
+                    <?php echo '</ul>'; ?>
+
+                  <?php else :
+                    $link = '<div class="row justify-content-center mb-0"><button class="btn btn-primary mt-5 btn-block w-50" type="submit">登録</button></div>';
+
+                  endif; ?>
+
+                  <form action="./insert.php" method="POST">
+
+                    <div class="form-row">
+                      <div class="col">
+                        <!-- 姓 -->
+                        <small id="" class="form-text text-muted sign_up_label">姓</small>
+                        <p><?php echo $_POST["last_name"] ?>
+                          <input type="hidden" name="last_name" value="<?php echo ($_POST["last_name"]); ?>">
+                        </p>
+                      </div>
+                      <div class="col">
+                        <!-- 名 -->
+                        <small id="" class="form-text text-muted sign_up_label">名</small>
+                        <p><?php echo $_POST["first_name"] ?>
+                          <input type="hidden" name="first_name" value="<?php echo ($_POST["first_name"]); ?>">
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- ユーザネーム -->
+                    <small id="" class="form-text text-muted sign_up_label">ユーザネーム</small>
+                    <p><?php echo $_POST["user_name"] ?>
+                      <input type="hidden" name="user_name" value="<?php echo h($_POST["user_name"]); ?>">
+                    </p>
+
+                    <!-- パスワード -->
+                    <small id="" class="form-text text-muted sign_up_label">パスワード</small>
+                    <p><?php echo $_POST["password"] ?>
+                      <input type="hidden" name="password" value="<?php echo ($_POST["password"]); ?>">
+                    </p>
+
+
+                    <!-- メールアドレス -->
+                    <small id="" class="form-text text-muted sign_up_label">メールアドレス</small>
+                    <p><?php echo $_POST["mail_address"] ?>
+                      <input type="hidden" name="mail_address" value="<?php echo h($_POST["mail_address"]); ?>">
+                    </p>
+
+                    <!-- 郵便番号 -->
+                    <small id="" class="form-text text-muted sign_up_label">郵便番号</small>
+                    <p><?php echo $_POST["postal_code"] ?>
+                      <input type="hidden" name="postal_code" value="<?php echo ($_POST["postal_code"]); ?>">
+                    </p>
+
+                    <!-- 住所 -->
+                    <small id="" class="form-text text-muted sign_up_label">住所</small>
+                    <p><?php echo $_POST["address"] ?>
+                      <input type="hidden" name="address" value="<?php echo ($_POST["address"]); ?>">
+                    </p>
+
+                    <!-- 電話番号 -->
+                    <small id="" class="form-text text-muted sign_up_label">電話番号</small>
+                    <p><?php echo $_POST["phone_number"] ?>
+                      <input type="hidden" name="phone_number" value="<?php echo ($_POST["phone_number"]); ?>">
+                    </p>
+
+                    <!-- 生年月日 -->
+                    <small id="" class="form-text text-muted sign_up_label">生年月日</small>
+                    <p><?php echo $_POST["birthday"] ?>
+                      <input type="hidden" name="birthday" value="<?php echo ($_POST["birthday"]); ?>">
+                    </p>
+
+                    <!-- 第三者質問と答え -->
+                    <div class="form-row">
+                      <div class="col">
+                        <!-- 第三者質問 -->
+                        <small id="" class="form-text text-muted sign_up_label">第三者質問</small>
+                        <select class="browser-default custom-select mb-3" name="question">
+                          <option value="1" <?php if ($_POST["question"] == "1") {
+                                              echo "selected";
+                                            } ?>>母の旧姓</option>
+                          <option value="2" <?php if ($_POST["question"] == "2") {
+                                              echo "selected";
+                                            } ?>>好きな食べ物</option>
+                          <option value="3" <?php if ($_POST["question"] == "3") {
+                                              echo "selected";
+                                            } ?>>自分の母校</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <!-- 答え -->
+                        <small id="" class="form-text text-muted sign_up_label pb-2">答え</small>
+                        <p><?php echo $_POST["answer"] ?>
+                          <input type="hidden" name="answer" value="<?php echo ($_POST["answer"]); ?>">
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- 送信or戻る $linkに入ってるので適宜変更してください -->
+                    <?php echo $link; ?>
+                  </form>
+
+                  <!-- Sign up button -->
+
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+          </div>
+          <!--Section-->
+        </section>
+      </div>
     </div>
 
 

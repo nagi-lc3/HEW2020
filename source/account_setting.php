@@ -108,42 +108,97 @@ if (!empty($_SESSION)) {
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>アカウント情報</h2>
-      <?php if (!empty($err_msg)) : ?>
-        <?php echo '<ul>'; ?>
-        <?php
-        foreach ((array)$err_msg as $error) {
-          echo '<li>' . $error . '</li>';
-        }
-        echo 'やり直してください';
-        ?>
-        <?php echo '</ul>'; ?>
-      <?php endif; ?>
-      <p>アカウント名: <?php if (!empty($_SESSION)) {
-                    echo h($user_name);
-                  } ?></p>
-      <p>名前: <?php if (!empty($_SESSION)) {
-                echo h($last_name . " " . $first_name);
-              }  ?></p>
-      <p>住所: <?php if (!empty($_SESSION)) {
-                echo h($address);
-              }  ?></p>
-      <p>電話番号: <?php if (!empty($_SESSION)) {
-                  echo h($phone_number);
-                }  ?></p>
-      <p>メールアドレス: <?php if (!empty($_SESSION)) {
-                    echo h($mail_address);
-                  }  ?></p>
-      <form action="account_setting_edit.php" method="post">
-        <?php if (!empty($_SESSION)) {
-          echo '<input type="submit" name="" value="編集する">';
-        }  ?>
-      </form>
-      <form action="./my_page.php" method="post">
-        <input type="submit" name="" value="戻る">
-      </form>
-    </div>
 
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">information</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">基本情報</h3>
+          <hr class="w-header my-4">
+
+          <div class="container my-5 py-5 z-depth-1 col-lg-8">
+
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 dark-grey-text">
+
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="">
+
+                  <?php if (!empty($err_msg)) : ?>
+                    <?php echo '<ul>'; ?>
+                    <?php
+                    foreach ((array)$err_msg as $error) {
+                      echo '<li>' . $error . '</li>';
+                    }
+                    echo 'やり直してください';
+                    ?>
+                    <?php echo '</ul>'; ?>
+                  <?php endif; ?>
+
+                  <!-- ユーザーネーム -->
+                  <small id="" class="form-text text-muted sign_up_label">ユーザーネーム</small>
+                  <p><?php if (!empty($_SESSION)) {
+                        echo h($user_name);
+                      } ?></p>
+
+                  <div class="form-row mb-3">
+                    <div class="col">
+                      <!-- 姓 -->
+                      <small id="" class="form-text text-muted sign_up_label">姓</small>
+                      <p class=""><?php if (!empty($_SESSION)) {
+                                    echo h($last_name);
+                                  }  ?></p>
+                    </div>
+                    <div class="col">
+                      <!-- 名 -->
+                      <small id="" class="form-text text-muted sign_up_label">名</small>
+                      <p><?php if (!empty($_SESSION)) {
+                            echo h($first_name);
+                          }  ?></p>
+                    </div>
+                  </div>
+
+                  <!-- 住所 -->
+                  <small id="" class="form-text text-muted sign_up_label">住所</small>
+                  <p><?php if (!empty($_SESSION)) {
+                        echo h($address);
+                      }  ?></p>
+
+                  <!-- 電話番号 -->
+                  <small id="" class="form-text text-muted sign_up_label">電話番号</small>
+                  <p><?php if (!empty($_SESSION)) {
+                        echo h($phone_number);
+                      }  ?></p>
+
+                  <!-- E-mail -->
+                  <small id="" class="form-text text-muted sign_up_label">メールアドレス</small>
+                  <p><?php if (!empty($_SESSION)) {
+                        echo h($mail_address);
+                      }  ?></p>
+
+                  <form action="account_setting_edit.php" method="post">
+                    <?php if (!empty($_SESSION)) {
+                      echo '<button name="" class="btn btn-primary my-4 btn-block" type="submit">編集する</button>';
+                    }  ?>
+                  </form>
+
+                  <!-- Sign up button -->
+
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!--Section: Content-->
+          </div>
+        </section>
+      </div>
+    </div>
 
     <?php include_once('./footer.html'); ?>
   </div>

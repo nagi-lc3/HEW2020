@@ -123,9 +123,10 @@ try {
       <?php if (!empty($products)) : ?>
         <?php
         foreach ($products as $product) {
-          echo '<h2>' . $product['product_name'] . '</h2>' . '<br>';
-          echo '<p><img src="' . $product['product_image'] . '" alt="' . $product['product_name'] . '"></p>';
-          echo '<p>' . $product['product_price'] . '円</p>' . '<br>';
+          // 商品一覧表示
+          echo '<h2>' . $product['product_name'] . '</h2>' . '<br>'; // 商品名
+          echo '<p><img src="' . $product['product_image'] . '" alt="' . $product['product_name'] . '"></p>'; // 商品画像
+          echo '<p>' . $product['product_price'] . '円</p>' . '<br>'; // 値段
           // パラメータ追加
           $link .= '&to_detail=' . $product['product_id'] . '&page_id=' . $now;
           // カテゴリ

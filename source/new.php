@@ -68,17 +68,17 @@ $link .= '?back=' . $b_link;
 
           <?php if (!empty($update)) : ?>
             <?php
-            $i = 0;
-            foreach ($update as $product) {
-              $tmp = explode(" ", $update[$i]['product_created_at']);
-              $date = explode("-", $tmp[0]);
-              echo '<p>' . $date[0] . "/" . $date[1] . "/" . $date[2] . '<p>';
-              echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a>入荷</p>';
-              $i++;
-            }
+            // $i = 0;
+            // foreach ($update as $product) {
+            //   $tmp = explode(" ", $update[$i]['product_created_at']);
+            //   $date = explode("-", $tmp[0]);
+            //   echo '<p>' . $date[0] . "/" . $date[1] . "/" . $date[2] . '<p>';
+            //   echo '<p><a href="' . $link . '&to_detail=' . $product['product_id'] . '">' . $product['product_name'] . '</a>入荷</p>';
+            //   $i++;
+            // }
             ?>
           <?php else : ?>
-            <p>該当する商品はありません</p>
+            <!-- <p>該当する商品はありません</p> -->
           <?php endif; ?>
 
 
@@ -489,15 +489,21 @@ $link .= '?back=' . $b_link;
               </div>
               <!-- Grid row 4 -->
 
+              <!-- ページネーション -->
               <nav>
                 <ul class="pagination justify-content-center pagination-lg">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="前へ">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">前へ</span>
+                    </a></li>
                   <li class="page-item active"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                  <li class="page-item pr-0"><a class="page-link" href="#" aria-label="次へ">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">次へ</span>
+                    </a></li>
                 </ul>
               </nav>
             </div>

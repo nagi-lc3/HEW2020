@@ -47,7 +47,7 @@ function h($str)
               <div class="col-md-12 col-lg-10 mx-auto mb-5 nav justify-content-center">
                 <h4 class="py-2 mt-5 text-white nav justify-content-center w-50" style="background-color: #4285f4;"><?php if (!empty($_SESSION['user_name'])) {
                     echo h($_SESSION['user_name']);
-                } ?>さん</h4>
+                } ?><span class="small mt-1 ml-1">さん</span></h4>
               </div>
             </div>
 

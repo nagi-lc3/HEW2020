@@ -57,12 +57,13 @@ $link .= '?back=' . $b_link;
           <!-- すべて魚装飾品水槽以下 -->
           <?php if (!empty($categories)) : ?>
             <?php
-            foreach ($categories as $category) {
-              echo '<p><a href="' . $link . '&c_id=' . $category['category_id'] . '&category=' . $c_name . '">' . $category['category_name'] . '</a></p>';
-            }
+            // foreach ($categories as $category) {
+            // // カテゴリ一覧表示
+            //   echo '<p><a href="' . $link . '&c_id=' . $category['category_id'] . '&category=' . $c_name . '">' . $category['category_name'] . '</a></p>';
+            // }
             ?>
           <?php else : ?>
-            <p>該当する商品はありません</p>
+            <!-- <p>該当する商品はありません</p> -->
           <?php endif; ?>
 
 

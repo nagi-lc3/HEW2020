@@ -20,11 +20,49 @@
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>お支払方法</h2>
-      <form action="account_payment_edit.php" method="post">
-        <p>お支払方法1</p>
-        <input type="submit" name="" value="編集する">
-      </form>
+
+      <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">payment</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">お支払方法</h3>
+          <hr class="w-header my-4">
+
+          <div class="container my-5 py-5 z-depth-1 col-lg-6">
+
+            <!--Section: Content-->
+            <section class="px-md-5 mx-md-5 dark-grey-text">
+
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="">
+
+                  <!-- お支払方法 -->
+                  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted sign_up_label">お支払方法1</small>
+                  <p>クレジットカード</p>
+
+                  <div class="form-row mb-3">
+
+                    <form action="account_payment_edit.php" method="post">
+                      <button name="" class="btn btn-primary my-4 btn-block" type="submit">編集する</button>
+                    </form>
+
+                    <!-- Sign up button -->
+
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+            </section>
+            <!--Section: Content-->
+          </div>
+        </section>
+      </div>
     </div>
 
 

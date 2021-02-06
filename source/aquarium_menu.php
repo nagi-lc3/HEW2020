@@ -38,17 +38,110 @@ if ($_SESSION['user_name'] == false) {
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">水槽一覧</h3>
           <hr class="w-header my-4">
 
-          <p><a href="aquarium_1.php">水槽1</a></p>
-          <p><a href="#">水槽2</a></p>
-          <p><a href="#">水槽3</a></p>
-          <form action="aquarium_create.php" method="post">
-            <input type="submit" name="" value="水槽を作成する">
-          </form>
-          <p><a href="help.php">水槽とは？</a></p>
+          <div class="container my-5">
 
+            <!--Section: Content-->
+            <section class="text-center dark-grey-text">
+
+              <!-- Section heading -->
+              <form action="aquarium_create.php" method="post">
+                <button class="btn btn-primary btn-rounded waves-effect waves-light">水槽を作成する</button>
+                <!-- Section description -->
+                <p class="text-muted w-responsive mx-auto mb-5"><a href="help.php">水槽とは？</a></p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                      <!-- Content -->
+                      <div class="card-body">
+
+                        <!-- Offer -->
+                        <h5 class="mb-4">水槽1</h5>
+                        <div class="d-flex justify-content-center">
+                        </div>
+
+                        <!--Price -->
+                        <h2 class="font-weight-bold my-4">サンプル</h2>
+                        <p class="grey-text">サンプルサンプル</p>
+                        <a class="btn btn-primary btn-rounded" href="aquarium_1.php">水槽1へ</a>
+
+                      </div>
+                      <!-- Content -->
+
+                    </div>
+                    <!-- Card -->
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                      <!-- Content -->
+                      <div class="card-body">
+
+                        <!-- Offer -->
+                        <h5 class="mb-4">水槽2</h5>
+                        <div class="d-flex justify-content-center">
+                        </div>
+
+                        <!--Price -->
+                        <h2 class="font-weight-bold my-4">サンプル</h2>
+                        <p>サンプルサンプル</p>
+                        <a class="btn btn-primary btn-rounded" href="#">水槽2へ</a>
+
+                      </div>
+                      <!-- Content -->
+
+                    </div>
+                    <!-- Card -->
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                      <!-- Content -->
+                      <div class="card-body">
+
+                        <!-- Offer -->
+                        <h5 class="mb-4">水槽3</h5>
+                        <div class="d-flex justify-content-center">
+                        </div>
+
+                        <!--Price -->
+                        <h2 class="font-weight-bold my-4">サンプル</h2>
+                        <p class="grey-text">サンプルサンプル</p>
+                        <a class="btn btn-primary btn-rounded" href="#">水槽3へ</a>
+
+                      </div>
+                      <!-- Content -->
+                    </div>
+                    <!-- Card -->
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </form>
+            </section>
+            <!--Section: Content-->
+
+          </div>
         </section>
       </div>
-
     </div>
 
 

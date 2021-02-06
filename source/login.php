@@ -30,7 +30,9 @@ if (!empty($_POST)) {
     $_SESSION['user_id'] = $member['user_id'];
     $_SESSION['user_name'] = $member['user_name'];
     $msg = 'ログインしました。';
-    $link = '<a href=' . $path_to_index . '>トップページへ</a>';
+    // $link = '<a href=' . $path_to_index . '>トップページへ</a>';
+    header('Location:' . $path_to_index . '?msg=' . $msg);
+    exit;
   } else {
     $msg = 'メールアドレスもしくはパスワードが間違っています。';
     $link = '<a href=' . $path_to_login . '>やり直す</a>';
@@ -60,24 +62,84 @@ if (!empty($_POST)) {
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>ログイン</h2>
-      <?php if ($flg == 0) : ?>
-        <form action="login.php" method="post">
-          <p>会員ID（メールアドレス）<input type="email" name="id" value=""></p>
-          <p>パスワード<input type="password" name="pass" value=""></p>
-          <input type="submit" name="login" value="ログイン">
-        </form>
+      <div class="container my-5">
 
-        <p>会員登録をしていない方はこちら</p>
-        <form action="sign_up.php" method="post">
-          <input type="submit" value="新規会員登録">
-        </form>
-      <?php elseif ($flg == 1) : ?>
-        <h2><?php echo $msg; ?>
-        </h2>
-        <p><?php echo $link; ?>
-        </p>
-      <?php endif; ?>
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">login</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">ログイン</h3>
+          <hr class="w-header my-4">
+
+
+          <!-- Main navigation -->
+          <div class="container-fluid mt-3 mb-5">
+
+            <!-- Full Page Intro -->
+            <section>
+              <!-- Mask & flexbox options-->
+              <div class="mask d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container">
+
+                  <!--Grid row-->
+                  <div class="row d-flex align-items-center justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-md-6 col-xl-5">
+
+
+                      <!--Form-->
+                      <?php if ($flg == 0) : ?>
+                        <div class="card">
+                          <div class="card-body z-depth-2 px-4">
+                            <form action="login.php" method="post">
+                              <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" id="form2" name="id" value="" class="form-control">
+                                <label for="form2">メールアドレス</label>
+                              </div>
+                              <div class="md-form">
+                                <i class="fas fa-key prefix grey-text"></i>
+                                <input type="password" id="form4" name="pass" value="" class="form-control">
+                                <label for="form4">パスワード</label>
+                              </div>
+                              <div class="md-form">
+                                <p><a href="#">パスワードを忘れましたか？</a></p>
+                              </div>
+                              <div class="text-center my-3">
+                                <button class="btn btn-primary btn-block">ログイン</button>
+                              </div>
+                            </form>
+                            <div class="text-center my-3">
+                              <a href="sign_up.php"><button class="btn btn-primary btn-block">新規会員登録</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      <?php elseif ($flg == 1) : ?>
+                        <h2><?php echo $msg; ?>
+                        </h2>
+                        <p><?php echo $link; ?>
+                        </p>
+                      <?php endif; ?>
+                      <!--/.Form-->
+
+
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </div>
+                <!-- Content -->
+              </div>
+              <!-- Mask & flexbox options-->
+            </section>
+            <!-- Full Page Intro -->
+
+          </div>
+          <!-- Main navigation -->
+
+        </section>
+      </div>
     </div>
 
 
