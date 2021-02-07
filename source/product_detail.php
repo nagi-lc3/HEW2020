@@ -35,9 +35,9 @@ try {
 
   // それぞれ変数に
   $name = $products['product_name'];
-  $price = $products['product_price'];
+  $price = '￥' . $products['product_price'];
   $description = $products['product_description'];
-  $img = '<img src="' . $products['product_image'] . '" alt="' . $name . '">';
+  $img = '<img class="card-img-top" src="' . $products['product_image'] . '" alt="' . $name . '">';
 } catch (PDOException $e) {
   echo $e;
 }
@@ -65,21 +65,50 @@ try {
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <!-- <h2>商品名</h2>
-            <p>商品A</p> -->
+      <div class="container my-5">
 
-      <?php
-      echo '<h2>' . $name . '</h2>';
-      echo '<p>' . $img . '</p>';
-      echo '<p>' . $description . '</p>';
-      echo '<p>' . $price . '円</p>';
-      ?>
-      <form action="./cart.php?product_id=<?php echo $product_id; ?>" method="post">
-        <input type="submit" name="" value="カートに入れる">
-      </form>
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">product detail</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">注文詳細</h3>
+          <hr class="w-header my-4">
+
+
+          <!-- 商品1 -->
+          <div class="">
+            <!-- Card -->
+            <a href="product_detail.php" class="card hoverable mb-4">
+              <!-- Card image -->
+              <?php echo $img; ?>
+              <!-- Card content -->
+              <div class="card-body">
+                <h3 class="card-title nav justify-content-center text-dark">
+                  <?php echo $name; ?>
+                </h3>
+                <hr>
+                <h4 class="card-subtitle nav justify-content-center text-muted mb-5">
+                  <?php echo $price; ?>
+                </h4>
+                <p class="card-subtitle nav justify-content-center text-muted mb-5">
+                  <?php echo $description; ?>
+                </p>
+                <div class="container-fluid mt-2 nav justify-content-center">
+                  <form action="./cart.php?product_id=<?php echo $product_id; ?>" method="post">
+                    <button class="btn btn-primary" type="submit">カートへ</button>
+                  </form>
+                  <form>
+                    <button class="btn btn-primary" type="submit">欲しいものリストへ</button>
+                  </form>
+                </div>
+              </div>
+            </a>
+            <!-- Card -->
+          </div>
+        </section>
+      </div>
     </div>
-    <!-- 暫定的にリンク -->
-    <div><a href="<?php echo $link; ?>">戻る</a></div>
+
 
     <?php include_once('./footer.html'); ?>
   </div>

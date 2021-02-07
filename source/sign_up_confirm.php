@@ -103,7 +103,6 @@ function h($value)
                       <input type="hidden" name="password" value="<?php echo ($_POST["password"]); ?>">
                     </p>
 
-
                     <!-- メールアドレス -->
                     <small id="" class="form-text text-muted sign_up_label">メールアドレス</small>
                     <p><?php echo $_POST["mail_address"] ?>
