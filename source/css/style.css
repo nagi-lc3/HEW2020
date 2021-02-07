@@ -261,19 +261,19 @@ body {
 }
 
 @media only screen and (min-width:771px) {
-    .z-depth-0 {
+    tr th .z-depth-0 {
         max-width: 300px;
     }
 }
 
 @media only screen and (max-width:990px) {
-    .z-depth-0 {
+    tr th .z-depth-0 {
         max-width: 200px;
     }
 }
 
 @media only screen and (max-width:770px) {
-    .z-depth-0 {
+    tr th .z-depth-0 {
         max-width: 100px;
     }
     .mt-3 strong {
@@ -307,3 +307,32 @@ body {
 }
 
 /* 新規会員登録 */
+
+/* 注文履歴 */
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* 注文履歴 */
+
+.font-weight-bold:nth-of-type(2) {
+    min-width: 150px;
+}
+
+.font-weight-bold:nth-of-type(3) {
+    min-width: 70px;
+}
+
+.font-weight-bold:nth-of-type(4) {
+    min-width: 50px;
+}
+
+td button {
+    min-width: 50px;
+}
+/* 注文履歴 */

@@ -631,64 +631,93 @@ $link .= '?back=' . $b_link;
               <div class="row">
 
                 <!-- 商品1 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Phone Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag, Box</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
 
                 <!-- 商品2 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img9.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Paper Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
 
                 <!-- 商品3 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Phone Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag, Box</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
 
                 <!-- 商品4 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img9.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Paper Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
+
                 <!-- Grid column -->
               </div>
               <!-- Grid row 1 -->
@@ -702,64 +731,93 @@ $link .= '?back=' . $b_link;
               <div class="row">
 
                 <!-- 商品1 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Phone Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag, Box</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
 
                 <!-- 商品2 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img9.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Paper Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
 
                 <!-- 商品3 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Phone Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag, Box</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
 
                 <!-- 商品4 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-3">
                   <!-- Card -->
-                  <a class="card hoverable mb-4">
+                  <a href="product_detail.php" class="card hoverable mb-4">
                     <!-- Card image -->
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img9.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/fish1.jpg" alt="Card image cap">
                     <!-- Card content -->
                     <div class="card-body">
-                      <h5 class="my-3">Paper Bag</h5>
-                      <p class="card-text text-uppercase mb-3">Bag</p>
+                      <h5 class="card-title nav justify-content-center text-dark">エンゼルフィッシュ</h5>
+                      <hr>
+                      <h6 class="card-subtitle nav justify-content-center text-muted">価格：￥1,011</h6>
+                      <div class="container-fluid mt-2 nav justify-content-center">
+                        <form>
+                          <button class="btn btn-primary btn-sm w-100">カートへ</button>
+                          <button class="btn btn-primary btn-sm w-100">欲しいものリストへ</button>
+                        </form>
+                      </div>
                     </div>
                   </a>
                   <!-- Card -->
                 </div>
+
                 <!-- Grid column -->
               </div>
               <!-- Grid row 1 -->

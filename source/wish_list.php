@@ -65,11 +65,11 @@
                 <!-- First row -->
                 <tr>
                   <th scope="row">
-                    <img src="images/fish1.jpg" alt="" class="img-fluid z-depth-0">
+                    <img src="images/fish4.jpg" alt="" class="img-fluid z-depth-0">
                   </th>
                   <td>
                     <h5 class="mt-3">
-                      <strong>エンゼルフィッシュ</strong>
+                      <strong>クマノミ</strong>
                     </h5>
                   </td>
                   <td>
@@ -78,8 +78,10 @@
                   <td class="font-weight-bold">
                     <strong>￥800</strong>
                   </td>
-                  <td class="pl-0">
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">カート
+                    </button><br>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">削除
                     </button>
                   </td>
                 </tr>
@@ -88,7 +90,7 @@
                 <!-- Second row -->
                 <tr>
                   <th scope="row">
-                    <img src="images/fish3.jpg" alt="" class="img-fluid z-depth-0">
+                    <img src="images/fish1.jpg" alt="" class="img-fluid z-depth-0">
                   </th>
                   <td>
                     <h5 class="mt-3">
@@ -101,8 +103,10 @@
                   <td class="font-weight-bold">
                     <strong>￥600</strong>
                   </td>
-                  <td class="pl-0">
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">カート
+                    </button><br>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">削除
                     </button>
                   </td>
                 </tr>
@@ -111,11 +115,11 @@
                 <!-- Third row -->
                 <tr>
                   <th scope="row">
-                    <img src="images/fish2.jpg" alt="" class="img-fluid z-depth-0">
+                    <img src="images/fish3.jpg" alt="" class="img-fluid z-depth-0">
                   </th>
                   <td>
                     <h5 class="mt-3">
-                      <strong>コリドラスパンダ</strong>
+                      <strong>グッピー</strong>
                     </h5>
                   </td>
                   <td>
@@ -124,8 +128,10 @@
                   <td class="font-weight-bold">
                     <strong>￥1,200</strong>
                   </td>
-                  <td class="pl-0">
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">カート
+                    </button><br>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">削除
                     </button>
                   </td>
                 </tr>
@@ -135,16 +141,16 @@
                 <tr>
                   <td>
                     <h4 class="mt-2 nav justify-content-end pr-5">
-                      <strong>サンプル</strong>
+                      <strong>合計</strong>
                     </h4>
                   </td>
                   <td>
                     <h4 class="mt-2">
-                      <strong>サンプル</strong>
+                      <strong>￥2,600</strong>
                     </h4>
                   </td>
                   <td colspan="3">
-                    <button onclick="location.href='order.php'" type="button" class="btn btn-primary btn-rounded">サンプル
+                    <button onclick="location.href='#'" type="button" class="btn btn-primary btn-rounded">全てカートへ
                       <i class="fas fa-angle-right right"></i>
                     </button>
                   </td>

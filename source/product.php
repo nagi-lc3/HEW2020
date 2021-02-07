@@ -115,80 +115,86 @@ try {
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>商品</h2>
-      <!-- <p><a href="product_detail.php">商品A</a></p>
-            <p><a href="product_detail.php">商品B</a></p>
-            <p><a href="product_detail.php">商品C</a></p> -->
+      <div class="container my-5">
 
-      <?php if (!empty($products)) : ?>
-        <?php
-        foreach ($products as $product) {
-          // 商品一覧表示
-          echo '<h2>' . $product['product_name'] . '</h2>' . '<br>'; // 商品名
-          echo '<p><img src="' . $product['product_image'] . '" alt="' . $product['product_name'] . '"></p>'; // 商品画像
-          echo '<p>' . $product['product_price'] . '円</p>' . '<br>'; // 値段
-          // パラメータ追加
-          $link .= '&to_detail=' . $product['product_id'] . '&page_id=' . $now;
-          // カテゴリ
-          if (!empty($c_id)) {
-            $link .= '&c_id=' . $c_id . '&category=' . $c_name;
-          }
-          if (!empty($search_word)) {
-            $link .= '&search=' . $search_word;
-          }
-          echo '<p><a href="' . $link . '">商品詳細へ</a></p>';
+        <!-- Section -->
+        <section>
+          <!-- タイトル -->
+          <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">product</h6>
+          <h3 class="font-weight-bold text-center dark-grey-text pb-2">商品一覧</h3>
+          <hr class="w-header my-4">
 
-          // 初期化
-          $link = './product_detail.php?back=' . $b_link;
-        }
-        // 暫定戻るボタン
-        if (!empty($_GET['back'])) {
-          echo '<p><a href="./category.php?category=' . $c_name . '">戻る</a></p>';
-        } elseif (!empty($_GET['search'])) {
-          echo '<p><a href="./product.php">戻る</a></p>';
-        }
-        ?>
-      <?php else : ?>
-        <p>該当する商品はありません</p>
-      <?php endif; ?>
+          <?php if (!empty($products)) : ?>
+            <?php
+            foreach ($products as $product) {
+              // 商品一覧表示
+              echo '<h2>' . $product['product_name'] . '</h2>' . '<br>'; // 商品名
+              echo '<p><img src="' . $product['product_image'] . '" alt="' . $product['product_name'] . '"></p>'; // 商品画像
+              echo '<p>' . $product['product_price'] . '円</p>' . '<br>'; // 値段
+              // パラメータ追加
+              $link .= '&to_detail=' . $product['product_id'] . '&page_id=' . $now;
+              // カテゴリ
+              if (!empty($c_id)) {
+                $link .= '&c_id=' . $c_id . '&category=' . $c_name;
+              }
+              if (!empty($search_word)) {
+                $link .= '&search=' . $search_word;
+              }
+              echo '<p><a href="' . $link . '">商品詳細へ</a></p>';
 
-      <!-- ページネーション -->
-      <?php
-      if (!empty($products)) {
-        // 前ページへ
-        if ($now != 1) {
-          $prev = $now - 1;
-          $pagination_link = $b_link . '?page_id=' . $prev . '&c_id=' . $c_id . '&category=' . $c_name . '&search=' . $search_word;
-          if (!empty($c_id)) {
-            $pagination_link .= '&back=' . $b_link;
-          }
-          echo '<span><a href=' . $pagination_link . '>＜前ページへ</a></span>';
-        }
-
-
-        for ($n = 1; $n <= $pages; $n++) {
-          if ($n == $now) {
-            echo "<span>$now</span>";
-          } else {
-            $now_link = $b_link . '?page_id=' . $n . '&c_id=' . $c_id . '&category=' . $c_name . '&search=' . $search_word;
-            if (!empty($c_id)) {
-              $now_link .= '&back=' . $b_link;
+              // 初期化
+              $link = './product_detail.php?back=' . $b_link;
             }
-            echo '<span><a href=' . $now_link . '>' . $n . '</a></span>';
-          }
-        }
+            // 暫定戻るボタン
+            if (!empty($_GET['back'])) {
+              echo '<p><a href="./category.php?category=' . $c_name . '">戻る</a></p>';
+            } elseif (!empty($_GET['search'])) {
+              echo '<p><a href="./product.php">戻る</a></p>';
+            }
+            ?>
+          <?php else : ?>
+            <p>該当する商品はありません</p>
+          <?php endif; ?>
 
-        // 次ページへ
-        if ($now != $pages) {
-          $next = $now + 1;
-          $pagination_link_next = $b_link . '?page_id=' . $next . '&c_id=' . $c_id . '&category=' . $c_name . '&search=' . $search_word;
-          if (!empty($c_id)) {
-            $pagination_link_next .= '&back=' . $b_link;
+          <!-- ページネーション -->
+          <?php
+          if (!empty($products)) {
+            // 前ページへ
+            if ($now != 1) {
+              $prev = $now - 1;
+              $pagination_link = $b_link . '?page_id=' . $prev . '&c_id=' . $c_id . '&category=' . $c_name . '&search=' . $search_word;
+              if (!empty($c_id)) {
+                $pagination_link .= '&back=' . $b_link;
+              }
+              echo '<span><a href=' . $pagination_link . '>＜前ページへ</a></span>';
+            }
+
+
+            for ($n = 1; $n <= $pages; $n++) {
+              if ($n == $now) {
+                echo "<span>$now</span>";
+              } else {
+                $now_link = $b_link . '?page_id=' . $n . '&c_id=' . $c_id . '&category=' . $c_name . '&search=' . $search_word;
+                if (!empty($c_id)) {
+                  $now_link .= '&back=' . $b_link;
+                }
+                echo '<span><a href=' . $now_link . '>' . $n . '</a></span>';
+              }
+            }
+
+            // 次ページへ
+            if ($now != $pages) {
+              $next = $now + 1;
+              $pagination_link_next = $b_link . '?page_id=' . $next . '&c_id=' . $c_id . '&category=' . $c_name . '&search=' . $search_word;
+              if (!empty($c_id)) {
+                $pagination_link_next .= '&back=' . $b_link;
+              }
+              echo '<span><a href=' . $pagination_link_next . '>次ページへ＞</a></span>';
+            }
           }
-          echo '<span><a href=' . $pagination_link_next . '>次ページへ＞</a></span>';
-        }
-      }
-      ?>
+          ?>
+        </section>
+      </div>
     </div>
 
 

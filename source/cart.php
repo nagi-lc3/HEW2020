@@ -77,8 +77,10 @@
                   <td class="font-weight-bold">
                     <strong>￥800</strong>
                   </td>
-                  <td class="pl-0">
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">欲しい
+                    </button><br>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">削除
                     </button>
                   </td>
                 </tr>
@@ -100,8 +102,10 @@
                   <td class="font-weight-bold">
                     <strong>￥600</strong>
                   </td>
-                  <td class="pl-0">
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">欲しい
+                    </button><br>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">削除
                     </button>
                   </td>
                 </tr>
@@ -123,8 +127,10 @@
                   <td class="font-weight-bold">
                     <strong>￥1,200</strong>
                   </td>
-                  <td class="pl-0">
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
+                  <td>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">欲しい
+                    </button><br>
+                    <button type="button" class="btn btn-sm btn-primary w-100 mx-0" data-toggle="tooltip" data-placement="top" title="Remove item">削除
                     </button>
                   </td>
                 </tr>
