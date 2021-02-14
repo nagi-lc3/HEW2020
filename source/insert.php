@@ -28,7 +28,7 @@ if ($member['mail_address'] === $_POST['mail_address']) {
 if (isset($_POST)) {
 
     // INSERT文準備
-    $stmt = $pdo->prepare("INSERT INTO USERS VALUES(
+    $stmt = $pdo->prepare("INSERT INTO users VALUES(
         :user_id,:mail_address,:user_name,:password,:last_name,:first_name,:postal_code,:address,:birthday,:phone_number,:question,:answer,:user_created_at,:user_deleted_at
         )");
 

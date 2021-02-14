@@ -78,7 +78,7 @@ try {
           <!-- 商品1 -->
           <div class="">
             <!-- Card -->
-            <a href="product_detail.php" class="card hoverable mb-4">
+            <div class="card hoverable mb-4 col-lg-8 px-0 mx-auto">
               <!-- Card image -->
               <?php echo $img; ?>
               <!-- Card content -->
@@ -102,7 +102,7 @@ try {
                   </form>
                 </div>
               </div>
-            </a>
+            </div>
             <!-- Card -->
           </div>
         </section>

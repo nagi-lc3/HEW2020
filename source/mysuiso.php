@@ -1,51 +1,3 @@
-<?php
-// phpの部分をマイ水槽のページへ移して使用してください
-session_start();
-require './db_connect.php';
-
-// ログインしていない場合
-if ($_SESSION['user_name'] == false) {
-  header('Location: ./login.php');
-}
-
-// aquarium_id取り出し
-$user_id = $_SESSION['user_id'];
-$existence_check_sql = "SELECT aquarium_id FROM my_aquariums INNER JOIN users ON my_aquariums.user_id = users.user_id WHERE users.user_id = :user_id";
-try {
-  $existence_check_stmt = $pdo->prepare($existence_check_sql);
-  $existence_check_stmt->bindParam(':user_id', $user_id);
-  $existence_check_stmt->execute();
-  $existence_check = $existence_check_stmt->fetch();
-} catch (PDOException $e) {
-  echo $e;
-}
-
-
-if ($existence_check == true) {
-  // aquarium_idがあった場合
-  $aquarium_id = $existence_check['aquarium_id'];
-  // aquarium_idをもとにcsvへのパス取り出し
-  $to_csv_sql = "SELECT aquarium_3D FROM aquariums WHERE aquarium_id = :aquarium_id";
-  try {
-    $to_csv_stmt = $pdo->prepare($to_csv_sql);
-    $to_csv_stmt->bindParam(':aquarium_id', $aquarium_id);
-    $to_csv_stmt->execute();
-    $to_csv = $to_csv_stmt->fetch();
-  } catch (PDOException $e) {
-    echo $e;
-  }
-
-  // csvファイルへのパス
-  $msg = '';
-  $path_to_csv = $to_csv['aquarium_3D'];
-} else {
-  // aquarium_idがない場合
-  $msg = '<p>まだ水槽がありません<br><a href="./aquarium_create.php">水槽を作成する</a><p>';
-  $path_to_csv = '';
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -53,33 +5,29 @@ if ($existence_check == true) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="熱帯魚の通販サイトです。">
-  <meta name="keywords" content="熱帯魚, 魚, 水槽, ECサイト, 通販, オンラインショップ">
-  <title>Auarium | 水槽1</title>
+  <title>モデル</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
 
-  <?php include_once('./link.html'); ?>
-  <script type="text/javascript" src="./threejs/three.js"></script>
+  <script type="text/javascript" src="./threejs/three.min.js"></script>
   <script type="text/javascript" src="./threejs/stats.js"></script>
-  <script type="text/javascript" src="./threejs/dat.gui.js"></script>
-  <script type="text/javascript" src="./threejs/OrbitControls.js"></script>
   <script type="text/javascript" src="./threejs/ColladaLoader.js"></script>
   <script type="text/javascript" src="./threejs/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="./threejs/OrbitControls.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script> -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
+
+  <?php include_once('./link.html'); ?>
 </head>
 
 
 <body>
   <div class="wrapper">
+    <!--ヘッダー部分-->
     <?php include_once('./header.html'); ?>
 
 
     <!-- メインコンテンツ -->
     <div class="contents">
-      <h2>水槽1</h2>
-      <!-- <p>ビューモード。この辺はレイアウト良く分からんのでモデリングの人に任せる</p> -->
-      <?php
-      echo $msg;
-      ?>
       <div class="container my-5">
 
         <!-- Section -->
@@ -388,19 +336,14 @@ if ($existence_check == true) {
 
           </main>
         </section>
-      </div>iv>
-
-
-      <!-- <form action="aquarium_edit_1.php" method="post">
-                <input type="submit" name="" value="編集する">
-            </form> -->
+      </div>
     </div>
-
-
     <?php include_once('./footer.html'); ?>
+
   </div>
 
   <?php include_once('./script.html'); ?>
+
 
   <script>
     var navList = document.getElementById('top').getElementsByTagName('li');

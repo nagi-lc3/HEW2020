@@ -44,7 +44,7 @@
                 <div class="w-75">
 
                   <!-- Default form register -->
-                  <form action="" method="post">
+                  <form action="./account_setting.php" method="post">
 
                     <!-- ユーザーネーム -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">ユーザーネーム</small>

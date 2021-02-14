@@ -31,7 +31,7 @@
         if ($_GET['flg']) {
           // 登録に成功した場合
           // header('Location: http://localhost/PHP/HEW2020_2/HEW2020/source/my_page.php');
-          header('Location: ./my_page.php');
+          // header('Location: ./my_page.php');
           exit;
         } else {
           // 失敗した場合

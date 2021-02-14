@@ -56,7 +56,7 @@ if ($_SESSION['user_name'] == false) {
                   <div class="col-lg-4 col-md-12 mb-4">
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card hoverable">
 
                       <!-- Content -->
                       <div class="card-body">
@@ -69,7 +69,7 @@ if ($_SESSION['user_name'] == false) {
                         <!--Price -->
                         <h2 class="font-weight-bold my-4">サンプル</h2>
                         <p class="grey-text">サンプルサンプル</p>
-                        <a class="btn btn-primary btn-rounded" href="aquarium_1.php">水槽1へ</a>
+                        <a class="btn btn-primary btn-rounded" href="mysuiso.php">水槽1へ</a>
 
                       </div>
                       <!-- Content -->
@@ -84,7 +84,7 @@ if ($_SESSION['user_name'] == false) {
                   <div class="col-lg-4 col-md-6 mb-4">
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card hoverable">
 
                       <!-- Content -->
                       <div class="card-body">
@@ -112,7 +112,7 @@ if ($_SESSION['user_name'] == false) {
                   <div class="col-lg-4 col-md-6 mb-4">
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card hoverable">
 
                       <!-- Content -->
                       <div class="card-body">
