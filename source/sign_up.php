@@ -29,7 +29,7 @@
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">新規会員登録</h3>
           <hr class="w-header my-4">
 
-          <div class="container my-5 py-5 z-depth-1 col-lg-8">
+          <div class="container white my-5 py-5 z-depth-1 col-lg-8">
 
             <!--Section: Content-->
             <section class="px-md-5 mx-md-5 dark-grey-text">
@@ -61,7 +61,7 @@
                     <input type="text" name="user_name" id="defaultRegisterFormUserName" class="form-control mb-3" placeholder="haltaro123">
 
                     <!-- パスワード -->
-                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">パスワード（半角整数8文字以上）<span class="badge badge-danger ml-1 ">必須</span></small>
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">パスワード（半角英数記号8文字以上）<span class="badge badge-danger ml-1 ">必須</span></small>
                     <input type="password" name="password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="password">
 
                     <!-- E-mail -->
@@ -70,7 +70,7 @@
 
                     <!-- 郵便番号 -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">郵便番号<span class="badge badge-danger ml-1 ">必須</span></small>
-                    <input type="text" name="postal_code" id="defaultRegisterPostalCode" class="form-control mb-3" placeholder="0001234">
+                    <input type="text" name="postal_code" id="defaultRegisterPostalCode" class="form-control mb-3" placeholder="000-1234">
 
                     <!-- 住所 -->
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">住所<span class="badge badge-danger ml-1 ">必須</span></small>
@@ -90,9 +90,9 @@
                         <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">第3者質問<span class="badge badge-danger ml-1 ">必須</span></small>
                         <select class="browser-default custom-select mb-3" name="question">
                           <option value="" selected="">選択ください</option>
-                          <option value="1">母の旧姓</option>
-                          <option value="2">好きな食べ物</option>
-                          <option value="3">自分の母校</option>
+                          <option value="母の旧姓">母の旧姓</option>
+                          <option value="好きな食べ物">好きな食べ物</option>
+                          <option value="自分の母校">自分の母校</option>
                         </select>
                       </div>
                       <div class="col">

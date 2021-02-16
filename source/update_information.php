@@ -26,8 +26,8 @@
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">update infromation</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">更新情報</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">更新情報</h3>
+          <hr class="w-header white my-4">
 
           <div class="container my-5">
 
@@ -57,12 +57,12 @@
                       <a href="update.php" class="">
                         <h6 class="font-weight-bold">Aquarium</h6>
                       </a>
-                      <p class="font-weight-bold dark-grey-text"><i class="fas fa-clock-o pr-2"></i>2021/03/01</p>
+                      <p class="font-weight-bold white-text"><i class="fas fa-clock-o pr-2"></i>2021/03/01</p>
                     </div>
 
                     <!-- Excerpt -->
-                    <h3 class="font-weight-bold dark-grey-text mb-3"><a>Webサイト公開</a></h3>
-                    <p class="dark-grey-text">Aquariumは熱帯魚専門の通信販売サイトです。サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+                    <h3 class="font-weight-bold white-text mb-3"><a>Webサイト公開</a></h3>
+                    <p class="white-text">Aquariumは熱帯魚専門の通信販売サイトです。サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
 
                   </div>
                   <!-- Featured news -->
@@ -93,10 +93,10 @@
                       <!-- Grid column -->
                       <div class="col-md-9">
                         <!-- Excerpt -->
-                        <p class="font-weight-bold dark-grey-text">2020/02/20</p>
+                        <p class="font-weight-bold white-text">2020/02/20</p>
                         <div class="d-flex justify-content-between">
                           <div class="col-11 text-truncate pl-0 mb-3">
-                            <a href="product_detail.php" class="dark-grey-text">新商品入荷。詳しくはこちら</a>
+                            <a href="product_detail.php" class="white-text">新商品入荷。詳しくはこちら</a>
                           </div>
                           <a href="product_detail.php"><i class="fas fa-angle-double-right"></i></a>
                         </div>
@@ -126,10 +126,10 @@
                       <!-- Grid column -->
                       <div class="col-md-9">
                         <!-- Excerpt -->
-                        <p class="font-weight-bold dark-grey-text">2020/02/15</p>
+                        <p class="font-weight-bold white-text">2020/02/15</p>
                         <div class="d-flex justify-content-between">
                           <div class="col-11 text-truncate pl-0 mb-3">
-                            <a href="#!" class="dark-grey-text">新商品入荷。詳しくはこちら</a>
+                            <a href="#!" class="white-text">新商品入荷。詳しくはこちら</a>
                           </div>
                           <a href="#"><i class="fas fa-angle-double-right"></i></a>
                         </div>
@@ -159,10 +159,10 @@
                       <!-- Grid column -->
                       <div class="col-md-9">
                         <!-- Excerpt -->
-                        <p class="font-weight-bold dark-grey-text">2020/02/01</p>
+                        <p class="font-weight-bold white-text">2020/02/01</p>
                         <div class="d-flex justify-content-between">
                           <div class="col-11 text-truncate pl-0 mb-3">
-                            <a href="#" class="dark-grey-text">新機能追加。詳しくはこちら。</a>
+                            <a href="#" class="white-text">新機能追加。詳しくはこちら。</a>
                           </div>
                           <a href="#"><i class="fas fa-angle-double-right"></i></a>
                         </div>
@@ -192,10 +192,10 @@
                       <!-- Grid column -->
                       <div class="col-md-9">
                         <!-- Excerpt -->
-                        <p class="font-weight-bold dark-grey-text">2020/02/01</p>
+                        <p class="font-weight-bold white-text">2020/02/01</p>
                         <div class="d-flex justify-content-between">
                           <div class="col-11 text-truncate pl-0 mb-3">
-                            <a href="#" class="dark-grey-text">新機能追加。詳しくはこちら。</a>
+                            <a href="#" class="white-text">新機能追加。詳しくはこちら。</a>
                           </div>
                           <a href="#"><i class="fas fa-angle-double-right"></i></a>
                         </div>
@@ -225,10 +225,10 @@
                       <!-- Grid column -->
                       <div class="col-md-9">
                         <!-- Excerpt -->
-                        <p class="font-weight-bold dark-grey-text">2020/02/01</p>
+                        <p class="font-weight-bold white-text">2020/02/01</p>
                         <div class="d-flex justify-content-between">
                           <div class="col-11 text-truncate pl-0 mb-3">
-                            <a href="#" class="dark-grey-text">新機能追加。詳しくはこちら。</a>
+                            <a href="#" class="white-text">新機能追加。詳しくはこちら。</a>
                           </div>
                           <a href="#"><i class="fas fa-angle-double-right"></i></a>
                         </div>
@@ -258,10 +258,10 @@
                       <!-- Grid column -->
                       <div class="col-md-9">
                         <!-- Excerpt -->
-                        <p class="font-weight-bold dark-grey-text">2020/02/01</p>
+                        <p class="font-weight-bold white-text">2020/02/01</p>
                         <div class="d-flex justify-content-between">
                           <div class="col-11 text-truncate pl-0 mb-3">
-                            <a href="#" class="dark-grey-text">新機能追加。詳しくはこちら。</a>
+                            <a href="#" class="white-text">新機能追加。詳しくはこちら。</a>
                           </div>
                           <a href="#"><i class="fas fa-angle-double-right"></i></a>
                         </div>

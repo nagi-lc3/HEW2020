@@ -115,10 +115,10 @@ if (!empty($_SESSION)) {
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">information</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">基本情報</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">基本情報</h3>
+          <hr class="w-header white my-4">
 
-          <div class="container my-5 py-5 z-depth-1 col-lg-8">
+          <div class="container white my-5 py-5 z-depth-1 col-lg-8">
 
             <!--Section: Content-->
             <section class="px-md-5 mx-md-5 dark-grey-text">

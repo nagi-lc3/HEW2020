@@ -26,12 +26,12 @@
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">wish_list</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">欲しいものリスト</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">欲しいものリスト</h3>
+          <hr class="w-header white my-4">
         </section>
       </div>
 
-      <div class="container my-5 py-3 z-depth-1 rounded">
+      <div class="container white my-5 py-3 z-depth-1 rounded">
 
         <!--Section: Content-->
         <section class="dark-grey-text">

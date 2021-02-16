@@ -335,4 +335,9 @@ body {
 td button {
     min-width: 50px;
 }
+
 /* 注文履歴 */
+
+.mainvisual{
+    width: 100%;
+}

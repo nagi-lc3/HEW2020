@@ -50,8 +50,8 @@ $link .= '?back=' . $b_link;
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">ranking</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">売れ筋ランキング</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">売れ筋ランキング</h3>
+          <hr class="w-header white my-4">
 
 
           <!-- <p>1位</p>
@@ -83,16 +83,16 @@ $link .= '?back=' . $b_link;
               <!-- タブ -->
               <ul class="nav md-pills flex-center flex-wrap mx-0" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active font-weight-bold text-uppercase" data-toggle="tab" href="#panel31" role="tab">すべて</a>
+                  <a class="nav-link active font-weight-bold text-uppercase white-text" data-toggle="tab" href="#panel31" role="tab">すべて</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel32" role="tab">魚</a>
+                  <a class="nav-link font-weight-bold text-uppercase white-text" data-toggle="tab" href="#panel32" role="tab">魚</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel33" role="tab">装飾品</a>
+                  <a class="nav-link font-weight-bold text-uppercase white-text" data-toggle="tab" href="#panel33" role="tab">装飾品</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel34" role="tab">水槽</a>
+                  <a class="nav-link font-weight-bold text-uppercase white-text" data-toggle="tab" href="#panel34" role="tab">水槽</a>
                 </li>
               </ul>
             </div>

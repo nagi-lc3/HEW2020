@@ -43,7 +43,7 @@ function h($value)
           <h3 class="font-weight-bold text-center dark-grey-text pb-2">会員登録確認</h3>
           <hr class="w-header my-4">
 
-          <div class="container my-5 py-5 z-depth-1 col-lg-8">
+          <div class="container white my-5 py-5 z-depth-1 col-lg-8">
 
             <!--Section: Content-->
             <section class="px-md-5 mx-md-5 dark-grey-text">
@@ -138,21 +138,12 @@ function h($value)
                       <div class="col">
                         <!-- 第三者質問 -->
                         <small id="" class="form-text text-muted sign_up_label">第三者質問</small>
-                        <select class="browser-default custom-select mb-3" name="question">
-                          <option value="1" <?php if ($_POST["question"] == "1") {
-                                              echo "selected";
-                                            } ?>>母の旧姓</option>
-                          <option value="2" <?php if ($_POST["question"] == "2") {
-                                              echo "selected";
-                                            } ?>>好きな食べ物</option>
-                          <option value="3" <?php if ($_POST["question"] == "3") {
-                                              echo "selected";
-                                            } ?>>自分の母校</option>
-                        </select>
+                        <p><?php echo $_POST["question"] ?></p>
+                        <input type="hidden" name="question" value="<?php echo ($_POST["question"]); ?>">
                       </div>
                       <div class="col">
                         <!-- 答え -->
-                        <small id="" class="form-text text-muted sign_up_label pb-2">答え</small>
+                        <small id="" class="form-text text-muted sign_up_label">答え</small>
                         <p><?php echo $_POST["answer"] ?>
                           <input type="hidden" name="answer" value="<?php echo ($_POST["answer"]); ?>">
                         </p>

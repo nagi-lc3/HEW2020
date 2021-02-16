@@ -24,10 +24,10 @@
 
         <h6 class="font-weight-normal text-uppercase font-small grey-text mb-4 text-center">FAQ</h6>
         <!-- Section heading -->
-        <h3 class="font-weight-bold black-text mb-4 pb-2 text-center">ヘルプ</h3>
-        <hr class="w-header">
+        <h3 class="font-weight-bold white-text mb-4 pb-2 text-center">ヘルプ</h3>
+        <hr class="w-header white">
         <!-- Section description -->
-        <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">よくある質問です。こちらで解決しない場合は、お手数ですが、お問い合わせページよりご連絡ください。</p>
+        <p class="lead text-white mx-auto mt-4 pt-2 mb-5 text-center">よくある質問です。こちらで解決しない場合は、お手数ですが、お問い合わせページよりご連絡ください。</p>
 
         <div class="row">
           <div class="col-md-12 col-lg-10 mx-auto mb-5">

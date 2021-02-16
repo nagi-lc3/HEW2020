@@ -177,9 +177,7 @@ li {
 
 .list_btton {
     float: left;
-    margin-top: 5px;
-    width: 233px;
-    height: 30px;
+    margin-bottom: 15px;
 }
 
 .list_btton button {
@@ -201,7 +199,6 @@ li {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 40px;
-    margin-left: 300px;
     width: 300px;
     height: 300px;
     border: #000 2px solid;
@@ -219,11 +216,8 @@ li {
     border-style: none;
     width: 300px;
     height: 50px;
-    background-color: #74bdff;
-    color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     margin: 10px auto;
-    box-shadow: 5px 5px 5px #ccc;
     font-size: 16px;
     font-family: "HGSｺﾞｼｯｸE";
 }

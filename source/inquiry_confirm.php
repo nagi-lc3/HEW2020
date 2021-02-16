@@ -74,10 +74,10 @@ if (!empty($_POST)) {
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">inquiry_comfirm</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">お問い合わせ確認</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">お問い合わせ確認</h3>
+          <hr class="w-header my-4 white">
 
-          <div class="container my-5 py-5 z-depth-1">
+          <div class="container white my-5 py-5 z-depth-1">
 
             <!--Section: Content-->
             <section class="px-md-5 mx-md-5 dark-grey-text">
@@ -124,21 +124,8 @@ if (!empty($_POST)) {
 
                     <!-- カテゴリ -->
                     <small id="" class="form-text text-muted sign_up_label">カテゴリ</small>
-                    <p>
-                      <select class="browser-default custom-select mb-3" name="category" id="">
-                        <option value="1" <?php if ($category == "1") {
-                                            echo "selected";
-                                          } ?>>category1
-                        </option>
-                        <option value="2" <?php if ($category == "2") {
-                                            echo "selected";
-                                          } ?>>category2
-                        </option>
-                        <option value="3" <?php if ($category == "3") {
-                                            echo "selected";
-                                          } ?>>category3
-                        </option>
-                      </select>
+                    <p><?php echo $category ?>
+                      <input type="hidden" name="category" value="<?php echo $category; ?>">
                     </p>
 
                     <!-- お問い合わせ内容 -->

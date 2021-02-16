@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>モデル</title>
-  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" href="css/mysuiso.css">
 
   <script type="text/javascript" src="./threejs/three.min.js"></script>
   <script type="text/javascript" src="./threejs/stats.js"></script>
@@ -70,8 +70,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -87,8 +87,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -104,8 +104,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -121,8 +121,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -138,8 +138,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -155,8 +155,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -173,8 +173,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -190,8 +190,8 @@
                       </div>
                       <div class="list_btton">
                         <form action="">
-                          <button type="button" onclick="fish()" class="button btn-primary">増やす</button>
-                          <button type="button" onclick="fish_del()" class="button btn-primary">減らす</button>
+                          <button type="button" onclick="fish()" class="btn btn-sm button btn-primary">増やす</button>
+                          <button type="button" onclick="fish_del()" class="btn btn-sm button btn-primary">減らす</button>
                         </form>
                       </div>
                     </li>
@@ -325,11 +325,11 @@
               </div>
               <div class="model_botton">
                 <form action="#" method="POST">
-                  <button type="button" onclick="sakujo()">全て削除</button>
-                  <button type="button" onclick="modoru()">ひとつ戻る</button>
+                  <button class="btn btn-primary" type="button" onclick="sakujo()">全て削除</button>
+                  <button class="btn btn-primary" type="button" onclick="modoru()">ひとつ戻る</button>
                   <!-- <button>視点を戻す</button> -->
-                  <button type="button" onclick="siten()">視点を戻す</button>
-                  <button type="button" onclick="SaveScene()">モデルを保存</button>
+                  <button class="btn btn-primary" type="button" onclick="siten()">視点を戻す</button>
+                  <button class="btn btn-primary" type="button" onclick="SaveScene()">モデルを保存</button>
                 </form>
               </div>
             </div>

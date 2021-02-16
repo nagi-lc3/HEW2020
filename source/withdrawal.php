@@ -28,8 +28,8 @@
 
         <h6 class="font-weight-normal text-uppercase font-small grey-text mb-4 text-center">withdrawal</h6>
         <!-- Section heading -->
-        <h3 class="font-weight-bold black-text mb-4 pb-2 text-center">退会</h3>
-        <hr class="w-header">
+        <h3 class="font-weight-bold white-text mb-4 pb-2 text-center">退会</h3>
+        <hr class="w-header white">
         <!-- Section description -->
         <h4 class="lead text-danger mx-auto mt-4 pt-2 mb-5 text-center">本当に退会しますか？</h4>
         <p class="lead text-danger mx-auto mt-4 pt-2 mb-5 text-center">今までの購入履歴やアカウント情報、マイ水槽など全て削除され、利用できなくなります。</p>

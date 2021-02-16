@@ -29,10 +29,10 @@
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">inquiry</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">お問い合わせ</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">お問い合わせ</h3>
+          <hr class="w-header my-4 white">
 
-          <div class="container my-5 py-5 z-depth-1">
+          <div class="container white my-5 py-5 z-depth-1">
 
             <!--Section: Content-->
             <section class="px-md-5 mx-md-5 dark-grey-text">
@@ -58,9 +58,9 @@
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted pl-1 sign_up_label">カテゴリ<span class="badge badge-danger ml-1">必須</span></small>
                     <select class="browser-default custom-select mb-3" name="category" id="">
                       <option value="" selected="">選択ください</option>
-                      <option value="1">カテゴリ1</option>
-                      <option value="2">カテゴリ2</option>
-                      <option value="3">カテゴリ3</option>
+                      <option value="カテゴリ1">カテゴリ1</option>
+                      <option value="カテゴリ2">カテゴリ2</option>
+                      <option value="カテゴリ3">カテゴリ3</option>
                     </select>
 
                     <!-- お問い合わせ内容 -->

@@ -39,8 +39,8 @@ function h($str)
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">my page</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">マイページ</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">マイページ</h3>
+          <hr class="w-header white my-4">
 
           <div class="card px-3">
             <div class="row">

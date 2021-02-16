@@ -27,7 +27,7 @@ function validation($request)
         if (!preg_match("/^[!-{}~]*$/", $request["password"])) {
             // 半角英数記号ではない
             $err_msg[] =  "パスワードは半角英数字及び記号で入力してください" . "\n";
-        } else if (mb_strlen($request["password"]) <= 8) {
+        } else if (mb_strlen($request["password"]) < 8) {
             // 8文字以下
             $err_msg[] =  "パスワードは8文字以上で入力してください" . "\n";
         } else if (mb_strlen($request["password"]) >= 20) {
@@ -42,7 +42,7 @@ function validation($request)
         }
 
         // postal_code
-        if (!preg_match("/^[0-9]{7}$/", $request["postal_code"])) {
+        if (!preg_match("/^[0-9]-{7}$/", $request["postal_code"])) {
             // 〇〇〇-〇〇〇〇か〇〇〇〇〇〇〇の形でない
             $err_msg[] =  "郵便番号の形式で入力してください" . "\n";
         }

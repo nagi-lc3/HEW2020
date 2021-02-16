@@ -26,8 +26,8 @@
         <section>
           <!-- タイトル -->
           <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">order</h6>
-          <h3 class="font-weight-bold text-center dark-grey-text pb-2">注文</h3>
-          <hr class="w-header my-4">
+          <h3 class="font-weight-bold text-center white-text pb-2">注文</h3>
+          <hr class="w-header white my-4">
 
           <div class="container mt-5">
 
