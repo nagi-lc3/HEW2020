@@ -46,10 +46,9 @@ if (!empty($_GET['msg'])) {
 
     </header>
     <!-- Main navigation -->
-  </div>
 
 
-  <?php include_once('./footer.html'); ?>
+    <?php include_once('./footer.html'); ?>
   </div>
 
   <?php include_once('./script.html'); ?>

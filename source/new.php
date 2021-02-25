@@ -59,13 +59,6 @@ $link .= '?back=' . $b_link;
           <h3 class="font-weight-bold text-center white-text pb-2">新着商品</h3>
           <hr class="w-header white my-4">
 
-          <!-- <p>2021/01/12</p>
-          <p><a href="#">新着情報1</a></p>
-          <p>2021/01/12</p>
-          <p><a href="#">新着情報2</a></p>
-          <p>2021/01/12</p>
-          <p><a href="#">新着情報3</a></p> -->
-
           <?php if (!empty($update)) : ?>
             <?php
             // $i = 0;
