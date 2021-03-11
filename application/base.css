@@ -1,0 +1,253 @@
+@charset "uft-8";
+.main {
+  width: 975px;
+  height: 710px;
+  margin: 80px 0;
+}
+
+/*ログイン*/
+
+.login_Btn {
+  position: absolute;
+  width: 72px;
+  height: 60px;
+  top: 20px;
+  right: 100px;
+}
+
+.login_Btn div {
+  border: 2px solid rgba(255, 255, 255, .8);
+  transition: all 300ms ease;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 5px;
+}
+
+.login_Btn .login {
+  margin-bottom: 5px;
+}
+
+.login_Btn div:hover {
+  border: 2px solid #fff;
+}
+
+/*ナビゲーション*/
+
+.navigation {
+  position: absolute;
+  width: 960px;
+  margin-top: 70px;
+  font-size: 14px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a {
+  margin: 0px 44px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, .8);
+}
+
+.navigation li a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, .8);
+}
+
+.navigation li a:hover {
+  color: #fff;
+}
+
+/*水槽*/
+
+.Aquarium {
+  float: left;
+  width: 698px;
+  height: 391px;
+  margin-right: 3px;
+  border: 1px solid #74bdff;
+}
+
+/*テーブル欄*/
+
+.tab {
+  float: right;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*テーブルヘッダー部分*/
+
+#top {
+  width: 255px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+  background: #ccc;
+  border-bottom: solid 2px #74bdff;
+}
+
+#top li {
+  width: 63.75px;
+  float: left;
+  font-family: "HGP創英角ｺﾞｼｯｸUB";
+}
+
+#top li.current {
+  background: #74bdff;
+}
+
+/*テーブルボディ部分*/
+
+#bottom {
+  width: 255px;
+  height: 680px;
+  background: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+#bottom section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: none;
+}
+
+#bottom section li {
+  width: 233px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+#bottom .current {
+  display: block;
+  margin: 5px auto;
+  width: 248px;
+  margin-right: 10px;
+}
+
+/*イメージ画像*/
+
+#bottom .current .list_img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.current img {
+  width: 60px;
+  height: 60px;
+}
+
+/*紹介文*/
+
+.current .list_text {
+  float: right;
+  width: 165px;
+  height: 62px;
+  margin-top: 5px;
+}
+
+.current h4 {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.current p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+/*テーブルボタン*/
+
+.list_btton {
+  float: left;
+  margin-top: 5px;
+  width: 233px;
+  height: 30px;
+}
+
+.list_btton button {
+  font-size: 12px;
+}
+
+/*view*/
+
+.view {
+  float: left;
+  width: 700px;
+  margin: 10px auto;
+}
+
+/*コントロール*/
+
+.Ctrl_window {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  margin-left: 300px;;
+  width: 300px;
+  height: 300px;
+  border: #000 2px solid;
+}
+
+/*モデルコントロールボタン*/
+
+.model_botton {
+  float: left;
+  width: 300px;
+  height: 300px;
+}
+
+.model_botton button {
+  border-style: none;
+  width: 300px;
+  height: 50px;
+  background-color: #74bdff;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 10px auto;
+  box-shadow: 5px 5px 5px #ccc;
+  font-size: 16px;
+  font-family: "HGSｺﾞｼｯｸE";
+}
+
+/* 追加 */
+
+.current ul {
+  padding: 0;
+}
+
+#top {
+  padding: 0;
+}
+
+#bottom {
+  padding: 0;
+  margin: 0;
+}
+
+.main .tab {
+  overflow: hidden;
+}
+
+.main .tab #bottom {
+  width: calc(100% + 14px);
+  height: 665px;
+  overflow-y: scroll;
+}

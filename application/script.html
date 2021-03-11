@@ -1,0 +1,25 @@
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- 背景 -->
+<script src="js/bubbly-bg.js"></script>
+<script>
+    bubbly({
+            blur: 15, //ぼかし
+            colorStart: '#78a6de', //背景グラデーション始まりの色
+            colorStop: '#0d2035', //背景グラデーション終わりの色
+            radiusFunc: () => 5 + Math.random() * 5, //大きさ
+            angleFunc: () => -Math.PI / 2, //向き
+            velocityFunc: () => Math.random() * 10, //速さ
+            bubbleFunc: () => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`, //色彩(hsla)
+            bubbles: 200, //個数
+            compose: 'source-over', //色ブレンド
+        });
+</script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>

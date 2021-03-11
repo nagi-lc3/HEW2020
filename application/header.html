@@ -1,0 +1,100 @@
+<!-- ヘッダー -->
+<div class="header">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light white">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.php">
+        <img src="images/logo.png" height="50" alt="ロゴ画像">
+      </a>
+
+      <!-- 検索 -->
+      <ul class="navbar-nav search">
+        <form class="form-inline w-100" action="product.php" method="GET">
+          <div class="input-group w-100">
+            <div class="input-group-prepend">
+              <select class="btn-sm btn-primary" title="次の中から検索">
+                <option selected="selected" value="search-alias=aps">すべて</option>
+                <option value="search-alias=fish">魚</option>
+                <option value="search-alias=ornaments">装飾品</option>
+                <option value="search-alias=aquarium">水槽</option>
+              </select>
+            </div>
+            <input type="search" class="form-control" name="search" aria-label="検索" placeholder="検索">
+            <div class="input-group-append">
+              <button class="btn-sm btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </ul>
+
+      <!-- スマホ版検索アイコン -->
+      <!-- 検索Collapse button -->
+      <button class="navbar-toggler toggler-example search-icon" type="button" data-toggle="collapse"
+        data-target="#search" aria-controls="search" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="dark-blue-text"><i class="fas fa-search"></i></span></button>
+
+      <!-- スマホ版カートアイコン -->
+      <a href="cart.php"><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart cart-icon text-dark"></i></a>
+
+
+      <!-- ハンバーガーCollapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 検索Collapsible content -->
+      <div class="collapse navbar-collapse" id="search">
+
+        <!-- 検索Links -->
+        <ul class="navbar-nav">
+          <form class="form-inline w-100" action="product.php" method="GET">
+            <div class="input-group w-100">
+              <div class="input-group-prepend">
+                <select class="btn-sm btn-primary" title="次の中から検索">
+                  <option selected="selected" value="search-alias=aps">すべて</option>
+                  <option value="search-alias=fish">魚</option>
+                  <option value="search-alias=ornaments">装飾品</option>
+                  <option value="search-alias=aquarium">水槽</option>
+                </select>
+              </div>
+              <input type="search" class="form-control" name="search" aria-label="検索" placeholder="検索">
+              <div class="input-group-append">
+                <button class="btn-sm btn-primary" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </ul>
+      </div>
+
+      <!-- ハンバーガーLinks -->
+      <div class="collapse navbar-collapse" id="nav">
+        <!-- マイページ以降 -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="my_page.php" class="nav-link waves-effect">マイページ</a></li>
+          <li class="nav-item"><a href="order_history.php" class="nav-link waves-effect">注文履歴</a></li>
+          <li class="nav-item"><a href="aquarium_menu.php" class="nav-link waves-effect">水槽</a></li>
+          <li class="nav-item"><a href="cart.php" class="nav-link waves-effect">カート
+              <!-- <i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart"></i> -->
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+  <!--/.Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light nav justify-content-center nav-tabs-wrap scroll white">
+    <!-- ヘッダー2 -->
+    <ul class="nav nav-tabs line">
+      <li class="nav-item"><a class="nav-link" href="update_information.php">更新情報</a></li>
+      <li class="nav-item"><a class="nav-link" href="new.php">新着商品</a></li>
+      <li class="nav-item"><a class="nav-link" href="ranking.php">ランキング</a></li>
+      <li class="nav-item"><a class="nav-link" href="product.php">商品一覧</a></li>
+    </ul>
+  </nav>
+</div>
